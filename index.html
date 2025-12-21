@@ -9,68 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        /* 自定義動畫與樣式 */
-        body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 1s ease-out forwards;
-            opacity: 0;
-            transform: translateY(20px);
-        }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .project-card {
-            transition: all 0.3s ease;
-        }
-
-        .project-card.hidden-card {
-            display: none;
-        }
-
-        .project-card.visible-card {
-            display: flex;
-            animation: fadeIn 0.5s ease-out forwards;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.95);
-            }
-
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        /* 滾動條樣式 */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #0f172a;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #334155;
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #475569;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <script>
         tailwind.config = {
             theme: {
@@ -100,76 +39,76 @@
     <div class="relative z-10 max-w-5xl mx-auto px-6 py-12 lg:py-20">
 
         <!-- Header Section -->
-        <header class="mb-20 fade-in-up" style="animation-delay: 0.1s;">
+        <header class="mb-24 fade-in-up" style="animation-delay: 0.1s;">
             <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
                 <div>
                     <div
-                        class="inline-flex items-center px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-medium mb-4">
-                        <i data-lucide="terminal" class="w-3 h-3 mr-2"></i>
+                        class="inline-flex items-center px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-medium mb-6">
+                        <i data-lucide="terminal" class="w-4 h-4 mr-2"></i>
                         Available for Opportunities
                     </div>
                     <h1
-                        class="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400 mb-4 tracking-tight">
-                        吳振彥 <span class="text-3xl text-slate-500 block md:inline md:text-5xl font-light">(Zhen-yan
+                        class="text-6xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400 mb-5 tracking-tight">
+                        吳振彥 <span class="text-4xl text-slate-500 block md:inline md:text-6xl font-light">(Zhen-yan
                             Wu)</span>
                     </h1>
-                    <p class="text-xl text-cyan-400 font-medium tracking-wide">中原資管 | AI & 網路技術探索者</p>
+                    <p class="text-2xl text-cyan-400 font-medium tracking-wide">中原資管</p>
                 </div>
-                <div class="flex flex-col gap-3 text-slate-400 text-sm">
+                <div class="flex flex-col gap-4 text-slate-400 text-base">
                     <a href="mailto:k9404019487@gmail.com"
                         class="flex items-center hover:text-white transition-colors group">
-                        <i data-lucide="mail" class="w-4 h-4 mr-2 group-hover:text-cyan-400 transition-colors"></i>
+                        <i data-lucide="mail" class="w-5 h-5 mr-3 group-hover:text-cyan-400 transition-colors"></i>
                         k9404019487@gmail.com
                     </a>
                     <div class="flex items-center">
-                        <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>
+                        <i data-lucide="map-pin" class="w-5 h-5 mr-3"></i>
                         桃園, 台灣
                     </div>
                 </div>
             </div>
-            <div class="mt-8 max-w-3xl border-l-2 border-cyan-500/30 pl-6 py-2">
-                <p class="text-slate-400 leading-relaxed italic text-lg">
+            <div class="mt-10 max-w-4xl border-l-4 border-cyan-500/30 pl-8 py-3">
+                <p class="text-slate-400 leading-relaxed italic text-xl">
                     "「適應力」是我的核心價值，我的指導教授一直告訴我，這是最好的時代也是最壞的時代，我身為資訊業的一員，必須持續學習，我熱衷於將複雜的技術應用於解決現實問題，並在資源受限的環境下發揮最大效能。"
                 </p>
             </div>
         </header>
 
         <!-- Main Grid Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
 
             <!-- Left Column: Education, Skills, Interests -->
-            <div class="lg:col-span-4 space-y-12 fade-in-up" style="animation-delay: 0.3s;">
+            <div class="lg:col-span-4 space-y-16 fade-in-up" style="animation-delay: 0.3s;">
 
                 <!-- Education -->
                 <section>
-                    <h2 class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-6 flex items-center">
-                        <i data-lucide="award" class="w-4 h-4 mr-2"></i> Education
+                    <h2 class="text-sm uppercase tracking-widest text-slate-500 font-bold mb-6 flex items-center">
+                        <i data-lucide="award" class="w-5 h-5 mr-2"></i> Education
                     </h2>
                     <div
-                        class="p-5 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-500/30 transition-colors duration-300">
-                        <h3 class="font-bold text-white text-lg">中原大學</h3>
-                        <p class="text-cyan-400 text-sm font-medium">資訊管理學系</p>
-                        <p class="text-xs text-slate-500 mt-1 mb-4 font-mono">2023 - 至今</p>
+                        class="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-500/30 transition-colors duration-300">
+                        <h3 class="font-bold text-white text-xl">中原大學</h3>
+                        <p class="text-cyan-400 text-base font-medium">資訊管理學系</p>
+                        <p class="text-sm text-slate-500 mt-1 mb-5 font-mono">2023 - 至今</p>
 
-                        <div class="space-y-3">
+                        <div class="space-y-4">
                             <!-- Presidential Award -->
-                            <div class="p-3 rounded bg-yellow-500/10 border border-yellow-500/20">
-                                <div class="flex items-center text-sm font-bold text-yellow-500 mb-1">
-                                    <i data-lucide="trophy" class="w-4 h-4 mr-2"></i>
+                            <div class="p-4 rounded bg-yellow-500/10 border border-yellow-500/20">
+                                <div class="flex items-center text-base font-bold text-yellow-500 mb-2">
+                                    <i data-lucide="trophy" class="w-5 h-5 mr-2"></i>
                                     書卷獎 (Academic Achievement)
                                 </div>
-                                <p class="text-xs text-slate-400 leading-relaxed">
+                                <p class="text-sm text-slate-400 leading-relaxed">
                                     學期學業總成績優異，班級排名前三。
                                 </p>
                             </div>
 
                             <!-- Subject Awards -->
-                            <div class="p-3 rounded bg-cyan-900/10 border border-cyan-500/20">
-                                <div class="flex items-center text-sm font-bold text-cyan-300 mb-1">
-                                    <i data-lucide="medal" class="w-4 h-4 mr-2"></i>
+                            <div class="p-4 rounded bg-cyan-900/10 border border-cyan-500/20">
+                                <div class="flex items-center text-base font-bold text-cyan-300 mb-2">
+                                    <i data-lucide="medal" class="w-5 h-5 mr-2"></i>
                                     專業學科優異獎 (數次獲獎)
                                 </div>
-                                <p class="text-xs text-slate-400 leading-relaxed">
+                                <p class="text-sm text-slate-400 leading-relaxed">
                                     於 Java、Python、資料結構與資料庫 (MySQL) 等核心科目表現優異。
                                 </p>
                             </div>
@@ -179,34 +118,34 @@
 
                 <!-- Certifications (New Section Highlight) -->
                 <section>
-                    <h2 class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-6 flex items-center">
-                        <i data-lucide="badge-check" class="w-4 h-4 mr-2"></i> Certifications
+                    <h2 class="text-sm uppercase tracking-widest text-slate-500 font-bold mb-6 flex items-center">
+                        <i data-lucide="badge-check" class="w-5 h-5 mr-2"></i> Certifications
                     </h2>
-                    <div class="space-y-3">
+                    <div class="space-y-4">
                         <!-- NVIDIA Cert -->
                         <div
-                            class="group p-3 rounded-xl bg-gradient-to-r from-green-900/20 to-transparent border border-green-500/20 hover:border-green-500/40 transition-all flex items-start">
-                            <div class="mt-1 mr-3 p-1.5 rounded bg-green-900/30 text-green-400">
-                                <i data-lucide="cpu" class="w-4 h-4"></i>
+                            class="group p-4 rounded-xl bg-gradient-to-r from-green-900/20 to-transparent border border-green-500/20 hover:border-green-500/40 transition-all flex items-start">
+                            <div class="mt-1 mr-4 p-2 rounded bg-green-900/30 text-green-400">
+                                <i data-lucide="cpu" class="w-5 h-5"></i>
                             </div>
                             <div>
-                                <h4 class="text-sm font-bold text-white group-hover:text-green-400 transition-colors">
+                                <h4 class="text-base font-bold text-white group-hover:text-green-400 transition-colors">
                                     NVIDIA DLI Certificate</h4>
-                                <p class="text-xs text-slate-400 mt-0.5">深度學習基礎理論與實踐</p>
-                                <p class="text-[10px] text-slate-500 font-mono mt-1">Issued Nov 2025</p>
+                                <p class="text-sm text-slate-400 mt-1">深度學習基礎理論與實踐</p>
+                                <p class="text-xs text-slate-500 font-mono mt-1">Issued Nov 2025</p>
                             </div>
                         </div>
 
                         <!-- n8n Cert -->
                         <div
-                            class="group p-3 rounded-xl bg-gradient-to-r from-pink-900/20 to-transparent border border-pink-500/20 hover:border-pink-500/40 transition-all flex items-start">
-                            <div class="mt-1 mr-3 p-1.5 rounded bg-pink-900/30 text-pink-400">
-                                <i data-lucide="zap" class="w-4 h-4"></i>
+                            class="group p-4 rounded-xl bg-gradient-to-r from-pink-900/20 to-transparent border border-pink-500/20 hover:border-pink-500/40 transition-all flex items-start">
+                            <div class="mt-1 mr-4 p-2 rounded bg-pink-900/30 text-pink-400">
+                                <i data-lucide="zap" class="w-5 h-5"></i>
                             </div>
                             <div>
-                                <h4 class="text-sm font-bold text-white group-hover:text-pink-400 transition-colors">n8n
-                                    Level 2 Expert</h4>
-                                <p class="text-xs text-slate-400 mt-0.5">Workflow Automation Certified</p>
+                                <h4 class="text-base font-bold text-white group-hover:text-pink-400 transition-colors">
+                                    n8n Level 2 Expert</h4>
+                                <p class="text-sm text-slate-400 mt-1">Workflow Automation Certified</p>
                             </div>
                         </div>
                     </div>
@@ -214,143 +153,160 @@
 
                 <!-- Skills -->
                 <section>
-                    <h2 class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-6 flex items-center">
-                        <i data-lucide="layers" class="w-4 h-4 mr-2"></i> Technical Stack
+                    <h2 class="text-sm uppercase tracking-widest text-slate-500 font-bold mb-6 flex items-center">
+                        <i data-lucide="layers" class="w-5 h-5 mr-2"></i> Technical Stack
                     </h2>
-                    <div class="grid grid-cols-1 gap-4">
+                    <div class="grid grid-cols-1 gap-5">
 
                         <!-- Skill Card: Dev -->
                         <div
-                            class="group p-4 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-500/30 transition-all">
-                            <div class="flex items-center mb-3">
-                                <i data-lucide="code-2" class="w-5 h-5 text-cyan-400"></i>
-                                <span class="ml-2 text-sm font-semibold text-slate-300">程式開發</span>
+                            class="group p-5 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-500/30 transition-all">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="code-2" class="w-6 h-6 text-cyan-400"></i>
+                                <span class="ml-3 text-base font-semibold text-slate-300">程式開發</span>
                             </div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="flex flex-wrap gap-2.5">
                                 <span
-                                    class="text-[10px] px-2 py-1 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">Java
+                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">Java
                                     (優異)</span>
                                 <span
-                                    class="text-[10px] px-2 py-1 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">Python</span>
+                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">Python</span>
                                 <span
-                                    class="text-[10px] px-2 py-1 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">MySQL</span>
+                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">MySQL</span>
                                 <span
-                                    class="text-[10px] px-2 py-1 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">Data
+                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">Data
                                     Structures</span>
                             </div>
                         </div>
 
                         <!-- Skill Card: AI -->
                         <div
-                            class="group p-4 rounded-xl bg-white/5 border border-white/10 hover:border-purple-500/30 transition-all">
-                            <div class="flex items-center mb-3">
-                                <i data-lucide="brain-circuit" class="w-5 h-5 text-purple-400"></i>
-                                <span class="ml-2 text-sm font-semibold text-slate-300">AI & 自動化</span>
+                            class="group p-5 rounded-xl bg-white/5 border border-white/10 hover:border-purple-500/30 transition-all">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="brain-circuit" class="w-6 h-6 text-purple-400"></i>
+                                <span class="ml-3 text-base font-semibold text-slate-300">AI & 自動化</span>
                             </div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="flex flex-wrap gap-2.5">
                                 <span
-                                    class="text-[10px] px-2 py-1 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">Flux
+                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">Flux
                                     / ComfyUI</span>
                                 <span
-                                    class="text-[10px] px-2 py-1 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">AI
+                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">AI
                                     Agent Dev</span>
                             </div>
                         </div>
 
                         <!-- Skill Card: Network -->
                         <div
-                            class="group p-4 rounded-xl bg-white/5 border border-white/10 hover:border-green-500/30 transition-all">
-                            <div class="flex items-center mb-3">
-                                <i data-lucide="network" class="w-5 h-5 text-green-400"></i>
-                                <span class="ml-2 text-sm font-semibold text-slate-300">網路與系統</span>
+                            class="group p-5 rounded-xl bg-white/5 border border-white/10 hover:border-green-500/30 transition-all">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="network" class="w-6 h-6 text-green-400"></i>
+                                <span class="ml-3 text-base font-semibold text-slate-300">網路與系統</span>
                             </div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="flex flex-wrap gap-2.5">
                                 <span
-                                    class="text-[10px] px-2 py-1 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">Packet
+                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">Packet
                                     Tracer</span>
                                 <span
-                                    class="text-[10px] px-2 py-1 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">CCNA
+                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">CCNA
                                     (Preparing)</span>
                                 <span
-                                    class="text-[10px] px-2 py-1 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">DNS/Firewall</span>
+                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">DNS/Firewall</span>
                             </div>
                         </div>
 
                         <!-- Skill Card: Language -->
                         <div
-                            class="group p-4 rounded-xl bg-white/5 border border-white/10 hover:border-orange-500/30 transition-all">
-                            <div class="flex items-center mb-3">
-                                <i data-lucide="globe" class="w-5 h-5 text-orange-400"></i>
-                                <span class="ml-2 text-sm font-semibold text-slate-300">語言能力</span>
+                            class="group p-5 rounded-xl bg-white/5 border border-white/10 hover:border-orange-500/30 transition-all">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="globe" class="w-6 h-6 text-orange-400"></i>
+                                <span class="ml-3 text-base font-semibold text-slate-300">語言能力</span>
                             </div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="flex flex-wrap gap-2.5">
                                 <span
-                                    class="text-[10px] px-2 py-1 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">TOEIC
+                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">TOEIC
                                     675</span>
                                 <span
-                                    class="text-[10px] px-2 py-1 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">FLPT
+                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">FLPT
                                     西文 A1</span>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <!-- Interest -->
+                <!-- Personal Attributes (Modified to include Finance & Fitness) -->
                 <section>
-                    <h2 class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-6 flex items-center">
-                        <i data-lucide="sword" class="w-4 h-4 mr-2"></i> Extracurricular
+                    <h2 class="text-sm uppercase tracking-widest text-slate-500 font-bold mb-6 flex items-center">
+                        <i data-lucide="user" class="w-5 h-5 mr-2"></i> Personal Attributes
                     </h2>
-                    <div
-                        class="p-5 rounded-xl bg-gradient-to-br from-red-900/10 to-transparent border border-red-500/10 hover:border-red-500/30 transition-all">
-                        <h3 class="font-bold text-white flex items-center">
-                            散打搏擊社 (Kickboxing)
-                        </h3>
-                        <p class="text-sm text-slate-400 mt-3 leading-relaxed">
-                            在高強度訓練中磨練意志與時間管理能力，並學習在瞬息萬變的對打中快速決策。這種「抗壓性」與「即時反應」也體現在我的工作態度上。
-                        </p>
+
+                    <div class="space-y-5">
+                        <!-- Financial Analysis -->
+                        <div
+                            class="p-5 rounded-xl bg-white/5 border border-white/10 hover:border-blue-500/30 transition-all">
+                            <h3 class="font-bold text-white flex items-center text-base mb-3">
+                                <i data-lucide="trending-up" class="w-5 h-5 mr-3 text-blue-400"></i>
+                                金融觀察與數據分析
+                            </h3>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                長期關注國際新聞、期貨與股市動向，習慣運用<strong>均線理論</strong>進行趨勢分析。這培養了我對<strong>數據波動的敏感度</strong>以及從宏觀角度思考問題的能力。
+                            </p>
+                        </div>
+
+                        <!-- Fitness & Kickboxing -->
+                        <div
+                            class="p-5 rounded-xl bg-gradient-to-br from-red-900/10 to-transparent border border-red-500/10 hover:border-red-500/30 transition-all">
+                            <h3 class="font-bold text-white flex items-center text-base mb-3">
+                                <i data-lucide="dumbbell" class="w-5 h-5 mr-3 text-red-400"></i>
+                                健身與散打搏擊
+                            </h3>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                除了參與散打社團，也維持規律的重訓習慣。在高強度運動中磨練<strong>意志力</strong>，並學習在壓力下保持冷靜與專注。
+                            </p>
+                        </div>
                     </div>
                 </section>
             </div>
 
             <!-- Right Column: Experience & Projects -->
-            <div class="lg:col-span-8 space-y-12 fade-in-up" style="animation-delay: 0.5s;">
+            <div class="lg:col-span-8 space-y-16 fade-in-up" style="animation-delay: 0.5s;">
 
                 <!-- Experience -->
                 <section>
-                    <h2 class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-6 flex items-center">
-                        <i data-lucide="coffee" class="w-4 h-4 mr-2"></i> Experience
+                    <h2 class="text-sm uppercase tracking-widest text-slate-500 font-bold mb-8 flex items-center">
+                        <i data-lucide="coffee" class="w-5 h-5 mr-2"></i> Experience
                     </h2>
-                    <div class="space-y-8">
+                    <div class="space-y-10">
 
                         <!-- Exp Item 1 -->
                         <div
-                            class="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-2 before:w-[2px] before:h-full before:bg-gradient-to-b before:from-cyan-500 before:to-transparent pb-2">
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                            class="relative pl-10 before:content-[''] before:absolute before:left-0 before:top-2 before:w-[3px] before:h-full before:bg-gradient-to-b before:from-cyan-500 before:to-transparent pb-4">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
                                 <div>
                                     <h3
-                                        class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">
+                                        class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
                                         機場飲料店暑期人員</h3>
-                                    <p class="text-cyan-400 text-sm font-medium">桃園國際機場管制區</p>
+                                    <p class="text-cyan-400 text-base font-medium mt-1">桃園國際機場管制區</p>
                                 </div>
                                 <span
-                                    class="text-xs text-slate-500 font-mono mt-1 md:mt-0 bg-slate-900 px-2 py-1 rounded border border-white/5">2023
+                                    class="text-sm text-slate-500 font-mono mt-2 md:mt-0 bg-slate-900 px-3 py-1.5 rounded border border-white/5">2023
                                     Summer</span>
                             </div>
-                            <ul class="mt-4 space-y-3">
-                                <li class="text-sm text-slate-400 flex items-start leading-relaxed">
+                            <ul class="mt-6 space-y-4">
+                                <li class="text-base text-slate-400 flex items-start leading-relaxed">
                                     <span
-                                        class="text-cyan-500 mr-3 mt-1.5 w-1.5 h-1.5 rounded-full bg-cyan-500 shrink-0 shadow-[0_0_8px_rgba(6,182,212,0.6)]"></span>
+                                        class="text-cyan-500 mr-4 mt-2 w-2 h-2 rounded-full bg-cyan-500 shrink-0 shadow-[0_0_8px_rgba(6,182,212,0.6)]"></span>
                                     <span><strong class="text-slate-300">英語環境溝通：</strong> 全英文應對多元國際旅客需求，展現語言自信。</span>
                                 </li>
-                                <li class="text-sm text-slate-400 flex items-start leading-relaxed">
+                                <li class="text-base text-slate-400 flex items-start leading-relaxed">
                                     <span
-                                        class="text-cyan-500 mr-3 mt-1.5 w-1.5 h-1.5 rounded-full bg-cyan-500 shrink-0"></span>
+                                        class="text-cyan-500 mr-4 mt-2 w-2 h-2 rounded-full bg-cyan-500 shrink-0"></span>
                                     <span><strong class="text-slate-300">極限危機處理：</strong>
                                         曾在人力短缺與發票機故障的雙重壓力下，獨自承擔兩人份工作量，並成功協調跨店資源解決大排長龍的危機。</span>
                                 </li>
-                                <li class="text-sm text-slate-400 flex items-start leading-relaxed">
+                                <li class="text-base text-slate-400 flex items-start leading-relaxed">
                                     <span
-                                        class="text-cyan-500 mr-3 mt-1.5 w-1.5 h-1.5 rounded-full bg-cyan-500 shrink-0"></span>
+                                        class="text-cyan-500 mr-4 mt-2 w-2 h-2 rounded-full bg-cyan-500 shrink-0"></span>
                                     <span><strong class="text-slate-300">團隊協作：</strong> 在高壓環境下保持冷靜，獨自一人完成巨量訂單。</span>
                                 </li>
                             </ul>
@@ -361,35 +317,35 @@
 
                 <!-- Volunteer Experience (New Section) -->
                 <section>
-                    <h2 class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-6 flex items-center">
-                        <i data-lucide="heart-handshake" class="w-4 h-4 mr-2"></i> Volunteer & Social Impact
+                    <h2 class="text-sm uppercase tracking-widest text-slate-500 font-bold mb-8 flex items-center">
+                        <i data-lucide="heart-handshake" class="w-5 h-5 mr-2"></i> Volunteer & Social Impact
                     </h2>
-                    <div class="space-y-8">
+                    <div class="space-y-10">
 
                         <!-- Volunteer Item 1: Marketing -->
                         <div
-                            class="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-2 before:w-[2px] before:h-full before:bg-gradient-to-b before:from-pink-500 before:to-transparent pb-2">
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                            class="relative pl-10 before:content-[''] before:absolute before:left-0 before:top-2 before:w-[3px] before:h-full before:bg-gradient-to-b before:from-pink-500 before:to-transparent pb-4">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
                                 <div>
                                     <h3
-                                        class="text-lg font-bold text-white group-hover:text-pink-400 transition-colors">
+                                        class="text-2xl font-bold text-white group-hover:text-pink-400 transition-colors">
                                         高齡者數位應用教學志工</h3>
-                                    <p class="text-pink-400 text-sm font-medium">行銷學課程志工服務</p>
+                                    <p class="text-pink-400 text-base font-medium mt-1">行銷學課程志工服務</p>
                                 </div>
                             </div>
-                            <div class="mt-4 p-4 rounded-lg bg-white/5 border border-white/5">
-                                <p class="text-sm text-slate-300 leading-relaxed italic mb-3">
+                            <div class="mt-6 p-6 rounded-lg bg-white/5 border border-white/5">
+                                <p class="text-base text-slate-300 leading-relaxed italic mb-4">
                                     "資訊人員還是需要貼近使用者需求。"
                                 </p>
-                                <ul class="space-y-2">
-                                    <li class="text-sm text-slate-400 flex items-start leading-relaxed">
+                                <ul class="space-y-3">
+                                    <li class="text-base text-slate-400 flex items-start leading-relaxed">
                                         <span
-                                            class="text-pink-500 mr-3 mt-1.5 w-1.5 h-1.5 rounded-full bg-pink-500 shrink-0"></span>
+                                            class="text-pink-500 mr-4 mt-2 w-2 h-2 rounded-full bg-pink-500 shrink-0"></span>
                                         <span>教導長者使用 Google Maps 與公車動態 App，解決生活中的數位落差。</span>
                                     </li>
-                                    <li class="text-sm text-slate-400 flex items-start leading-relaxed">
+                                    <li class="text-base text-slate-400 flex items-start leading-relaxed">
                                         <span
-                                            class="text-pink-500 mr-3 mt-1.5 w-1.5 h-1.5 rounded-full bg-pink-500 shrink-0"></span>
+                                            class="text-pink-500 mr-4 mt-2 w-2 h-2 rounded-full bg-pink-500 shrink-0"></span>
                                         <span>深刻體會到技術必須具備「易用性」，學會如何將複雜的資訊系統功能，轉化為使用者聽得懂的語言。</span>
                                     </li>
                                 </ul>
@@ -398,24 +354,24 @@
 
                         <!-- Volunteer Item 2: Management -->
                         <div
-                            class="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-2 before:w-[2px] before:h-full before:bg-gradient-to-b before:from-green-500 before:to-transparent pb-2">
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                            class="relative pl-10 before:content-[''] before:absolute before:left-0 before:top-2 before:w-[3px] before:h-full before:bg-gradient-to-b before:from-green-500 before:to-transparent pb-4">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
                                 <div>
                                     <h3
-                                        class="text-lg font-bold text-white group-hover:text-green-400 transition-colors">
+                                        class="text-2xl font-bold text-white group-hover:text-green-400 transition-colors">
                                         新住民子女淨灘活動志工</h3>
-                                    <p class="text-green-400 text-sm font-medium">管理學課程志工服務</p>
+                                    <p class="text-green-400 text-base font-medium mt-1">管理學課程志工服務</p>
                                 </div>
                             </div>
-                            <ul class="mt-4 space-y-2">
-                                <li class="text-sm text-slate-400 flex items-start leading-relaxed">
+                            <ul class="mt-6 space-y-3">
+                                <li class="text-base text-slate-400 flex items-start leading-relaxed">
                                     <span
-                                        class="text-green-500 mr-3 mt-1.5 w-1.5 h-1.5 rounded-full bg-green-500 shrink-0"></span>
+                                        class="text-green-500 mr-4 mt-2 w-2 h-2 rounded-full bg-green-500 shrink-0"></span>
                                     <span>陪伴新住民小朋友參與淨灘活動，落實環境永續與社會責任 (CSR)。</span>
                                 </li>
-                                <li class="text-sm text-slate-400 flex items-start leading-relaxed">
+                                <li class="text-base text-slate-400 flex items-start leading-relaxed">
                                     <span
-                                        class="text-green-500 mr-3 mt-1.5 w-1.5 h-1.5 rounded-full bg-green-500 shrink-0"></span>
+                                        class="text-green-500 mr-4 mt-2 w-2 h-2 rounded-full bg-green-500 shrink-0"></span>
                                     <span>培養跨文化的同理心與溝通能力，學習如何引導團隊完成共同目標。</span>
                                 </li>
                             </ul>
@@ -426,140 +382,140 @@
 
                 <!-- Projects -->
                 <section>
-                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
-                        <h2 class="text-xs uppercase tracking-widest text-slate-500 font-bold flex items-center">
-                            <i data-lucide="terminal" class="w-4 h-4 mr-2"></i> Featured Projects
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-10 gap-5">
+                        <h2 class="text-sm uppercase tracking-widest text-slate-500 font-bold flex items-center">
+                            <i data-lucide="terminal" class="w-5 h-5 mr-3"></i> Featured Projects
                         </h2>
 
                         <!-- Filter Buttons -->
-                        <div class="flex gap-2 p-1 bg-white/5 rounded-lg border border-white/5" id="project-filters">
+                        <div class="flex gap-3 p-1.5 bg-white/5 rounded-lg border border-white/5" id="project-filters">
                             <button onclick="filterProjects('all')"
-                                class="filter-btn active px-4 py-1.5 rounded-md text-[11px] font-medium transition-all duration-300 bg-cyan-500 text-slate-950 shadow-lg shadow-cyan-500/20"
+                                class="filter-btn active px-5 py-2 rounded-md text-xs font-medium transition-all duration-300 bg-cyan-500 text-slate-950 shadow-lg shadow-cyan-500/20"
                                 data-filter="all">
                                 ALL
                             </button>
                             <button onclick="filterProjects('ai')"
-                                class="filter-btn px-4 py-1.5 rounded-md text-[11px] font-medium transition-all duration-300 text-slate-400 hover:text-white hover:bg-white/5"
+                                class="filter-btn px-5 py-2 rounded-md text-xs font-medium transition-all duration-300 text-slate-400 hover:text-white hover:bg-white/5"
                                 data-filter="ai">
                                 AI / DATA
                             </button>
                             <button onclick="filterProjects('dev')"
-                                class="filter-btn px-4 py-1.5 rounded-md text-[11px] font-medium transition-all duration-300 text-slate-400 hover:text-white hover:bg-white/5"
+                                class="filter-btn px-5 py-2 rounded-md text-xs font-medium transition-all duration-300 text-slate-400 hover:text-white hover:bg-white/5"
                                 data-filter="dev">
                                 DEV / COMP
                             </button>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="projects-grid">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-grid">
 
                         <!-- Project 1: VR -->
-                        <div class="project-card visible-card group flex flex-col p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-cyan-500/30 transition-all duration-300 h-full"
+                        <div class="project-card visible-card group flex flex-col p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-cyan-500/30 transition-all duration-300 h-full"
                             data-category="competition">
-                            <div class="flex justify-between items-start mb-4">
+                            <div class="flex justify-between items-start mb-6">
                                 <div
-                                    class="p-2 rounded-lg bg-slate-900 text-cyan-400 group-hover:scale-110 transition-transform">
-                                    <i data-lucide="trophy" class="w-5 h-5"></i>
+                                    class="p-3 rounded-lg bg-slate-900 text-cyan-400 group-hover:scale-110 transition-transform">
+                                    <i data-lucide="trophy" class="w-6 h-6"></i>
                                 </div>
                                 <span
-                                    class="text-[10px] px-2.5 py-1 rounded-full bg-yellow-500/10 text-yellow-500 border border-yellow-500/20 font-bold tracking-wide">
+                                    class="text-xs px-3 py-1.5 rounded-full bg-yellow-500/10 text-yellow-500 border border-yellow-500/20 font-bold tracking-wide">
                                     決賽入圍
                                 </span>
                             </div>
-                            <h3 class="text-lg font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
                                 高功能自閉症 VR 虛擬教學助理
                             </h3>
-                            <p class="text-sm text-slate-400 leading-relaxed mb-6 flex-grow">
+                            <p class="text-base text-slate-400 leading-relaxed mb-8 flex-grow">
                                 於「解決未來能力問題競賽」入圍決賽。針對教育與醫療領域，利用 VR 技術提供沈浸式學習。雖具專業門檻，但深刻體會到產品「使用者共鳴」的重要性。
                             </p>
-                            <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5">
+                            <div class="flex flex-wrap gap-3 mt-auto pt-5 border-t border-white/5">
                                 <span
-                                    class="text-[10px] font-mono text-cyan-300/80 bg-cyan-900/20 px-2 py-1 rounded">#VR</span>
+                                    class="text-xs font-mono text-cyan-300/80 bg-cyan-900/20 px-3 py-1.5 rounded">#VR</span>
                                 <span
-                                    class="text-[10px] font-mono text-cyan-300/80 bg-cyan-900/20 px-2 py-1 rounded">#教育科技</span>
+                                    class="text-xs font-mono text-cyan-300/80 bg-cyan-900/20 px-3 py-1.5 rounded">#教育科技</span>
                             </div>
                         </div>
 
                         <!-- Project 2: AI Art -->
-                        <div class="project-card visible-card group flex flex-col p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-cyan-500/30 transition-all duration-300 h-full"
+                        <div class="project-card visible-card group flex flex-col p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-cyan-500/30 transition-all duration-300 h-full"
                             data-category="ai">
-                            <div class="flex justify-between items-start mb-4">
+                            <div class="flex justify-between items-start mb-6">
                                 <div
-                                    class="p-2 rounded-lg bg-slate-900 text-purple-400 group-hover:scale-110 transition-transform">
-                                    <i data-lucide="image" class="w-5 h-5"></i>
+                                    class="p-3 rounded-lg bg-slate-900 text-purple-400 group-hover:scale-110 transition-transform">
+                                    <i data-lucide="image" class="w-6 h-6"></i>
                                 </div>
                                 <span
-                                    class="text-[10px] px-2.5 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 font-bold tracking-wide">
+                                    class="text-xs px-3 py-1.5 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 font-bold tracking-wide">
                                     入圍作品
                                 </span>
                             </div>
-                            <h3 class="text-lg font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
                                 2024 燦坤 AI 智繪大賞 - 永續之境
                             </h3>
-                            <p class="text-sm text-slate-400 leading-relaxed mb-6 flex-grow">
+                            <p class="text-base text-slate-400 leading-relaxed mb-8 flex-grow">
                                 在硬體受限 (GTX 1650) 下，優化 Flux 與 ComfyUI 工作流，穩定生成 1080p 高品質圖片。展現了在有限資源下解決效能瓶頸的能力。
                             </p>
-                            <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5">
+                            <div class="flex flex-wrap gap-3 mt-auto pt-5 border-t border-white/5">
                                 <span
-                                    class="text-[10px] font-mono text-purple-300/80 bg-purple-900/20 px-2 py-1 rounded">#Flux</span>
+                                    class="text-xs font-mono text-purple-300/80 bg-purple-900/20 px-3 py-1.5 rounded">#Flux</span>
                                 <span
-                                    class="text-[10px] font-mono text-purple-300/80 bg-purple-900/20 px-2 py-1 rounded">#ComfyUI</span>
+                                    class="text-xs font-mono text-purple-300/80 bg-purple-900/20 px-3 py-1.5 rounded">#ComfyUI</span>
                                 <span
-                                    class="text-[10px] font-mono text-purple-300/80 bg-purple-900/20 px-2 py-1 rounded">#ResourceOptimization</span>
+                                    class="text-xs font-mono text-purple-300/80 bg-purple-900/20 px-3 py-1.5 rounded">#ResourceOptimization</span>
                             </div>
                         </div>
 
                         <!-- Project 3: AI Legal -->
-                        <div class="project-card visible-card group flex flex-col p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-cyan-500/30 transition-all duration-300 h-full"
+                        <div class="project-card visible-card group flex flex-col p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-cyan-500/30 transition-all duration-300 h-full"
                             data-category="ai">
-                            <div class="flex justify-between items-start mb-4">
+                            <div class="flex justify-between items-start mb-6">
                                 <div
-                                    class="p-2 rounded-lg bg-slate-900 text-green-400 group-hover:scale-110 transition-transform">
-                                    <i data-lucide="scale" class="w-5 h-5"></i>
+                                    class="p-3 rounded-lg bg-slate-900 text-green-400 group-hover:scale-110 transition-transform">
+                                    <i data-lucide="scale" class="w-6 h-6"></i>
                                 </div>
                                 <span
-                                    class="text-[10px] px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 font-bold tracking-wide">
+                                    class="text-xs px-3 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 font-bold tracking-wide">
                                     開發中
                                 </span>
                             </div>
-                            <h3 class="text-lg font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
                                 AI 法律顧問 & n8n 工作流
                             </h3>
-                            <p class="text-sm text-slate-400 leading-relaxed mb-6 flex-grow">
+                            <p class="text-base text-slate-400 leading-relaxed mb-8 flex-grow">
                                 利用 n8n 自動化工作流串接 LLM 後端，旨在降低法律諮詢門檻。實作從 User Input 到 AI 分析再到結構化輸出的完整 Pipeline。
                             </p>
-                            <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5">
+                            <div class="flex flex-wrap gap-3 mt-auto pt-5 border-t border-white/5">
                                 <span
-                                    class="text-[10px] font-mono text-green-300/80 bg-green-900/20 px-2 py-1 rounded">#n8n</span>
+                                    class="text-xs font-mono text-green-300/80 bg-green-900/20 px-3 py-1.5 rounded">#n8n</span>
                                 <span
-                                    class="text-[10px] font-mono text-green-300/80 bg-green-900/20 px-2 py-1 rounded">#LLM</span>
+                                    class="text-xs font-mono text-green-300/80 bg-green-900/20 px-3 py-1.5 rounded">#LLM</span>
                                 <span
-                                    class="text-[10px] font-mono text-green-300/80 bg-green-900/20 px-2 py-1 rounded">#Automation</span>
+                                    class="text-xs font-mono text-green-300/80 bg-green-900/20 px-3 py-1.5 rounded">#Automation</span>
                             </div>
                         </div>
 
                         <!-- Project 4: iOS App -->
-                        <div class="project-card visible-card group flex flex-col p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-cyan-500/30 transition-all duration-300 h-full"
+                        <div class="project-card visible-card group flex flex-col p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-cyan-500/30 transition-all duration-300 h-full"
                             data-category="dev">
-                            <div class="flex justify-between items-start mb-4">
+                            <div class="flex justify-between items-start mb-6">
                                 <div
-                                    class="p-2 rounded-lg bg-slate-900 text-orange-400 group-hover:scale-110 transition-transform">
-                                    <i data-lucide="smartphone" class="w-5 h-5"></i>
+                                    class="p-3 rounded-lg bg-slate-900 text-orange-400 group-hover:scale-110 transition-transform">
+                                    <i data-lucide="smartphone" class="w-6 h-6"></i>
                                 </div>
                             </div>
-                            <h3 class="text-lg font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
                                 iOS 今天吃甚麼 APP
                             </h3>
-                            <p class="text-sm text-slate-400 leading-relaxed mb-6 flex-grow">
+                            <p class="text-base text-slate-400 leading-relaxed mb-8 flex-grow">
                                 課堂開發作品，解決日常選擇困難。專注於直覺的 UI 設計與流暢的 UX 體驗，整合隨機演算法與簡易資料庫。
                             </p>
-                            <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5">
+                            <div class="flex flex-wrap gap-3 mt-auto pt-5 border-t border-white/5">
                                 <span
-                                    class="text-[10px] font-mono text-orange-300/80 bg-orange-900/20 px-2 py-1 rounded">#Swift</span>
+                                    class="text-xs font-mono text-orange-300/80 bg-orange-900/20 px-3 py-1.5 rounded">#Swift</span>
                                 <span
-                                    class="text-[10px] font-mono text-orange-300/80 bg-orange-900/20 px-2 py-1 rounded">#iOS</span>
+                                    class="text-xs font-mono text-orange-300/80 bg-orange-900/20 px-3 py-1.5 rounded">#iOS</span>
                                 <span
-                                    class="text-[10px] font-mono text-orange-300/80 bg-orange-900/20 px-2 py-1 rounded">#UI/UX</span>
+                                    class="text-xs font-mono text-orange-300/80 bg-orange-900/20 px-3 py-1.5 rounded">#UI/UX</span>
                             </div>
                         </div>
 
@@ -571,15 +527,15 @@
 
         <!-- Footer -->
         <footer
-            class="mt-32 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-xs">
+            class="mt-32 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-sm">
             <p>© 2024 Zhen-yan Wu. All rights reserved.</p>
-            <div class="flex gap-6">
+            <div class="flex gap-8">
                 <a href="#" class="hover:text-white transition-colors flex items-center gap-2">
-                    <i data-lucide="github" class="w-3 h-3"></i> GitHub
+                    <i data-lucide="github" class="w-4 h-4"></i> GitHub
                 </a>
                 <a href="mailto:k9404019487@gmail.com"
                     class="hover:text-white transition-colors flex items-center gap-2">
-                    <i data-lucide="mail" class="w-3 h-3"></i> Contact Me
+                    <i data-lucide="mail" class="w-4 h-4"></i> Contact Me
                 </a>
             </div>
         </footer>
