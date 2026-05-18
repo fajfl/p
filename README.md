@@ -3,7 +3,7 @@
 這是我的 GitHub Pages 個人履歷與 portfolio。我的定位是「AI 自動化與系統整合導向的資管系學生」，目前主要關注 AI workflow、LINE Bot、API 串接、資料處理、系統整合與 prototype 開發。
 
 網站連結：
-- https://fajfl.github.io/p/
+- https://fajfl.github.io/resume/
 
 ## 我的方向
 
