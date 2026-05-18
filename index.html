@@ -90,18 +90,11 @@
                     <dl class="project-detail">
                         <dt>Problem</dt><dd>租屋協商常分散在 LINE 對話、物件頁面與口頭確認中，日後容易缺少可追蹤、可確認的條件紀錄。</dd>
                         <dt>My Role</dt><dd>參與系統架構規劃與畢業專題方向收斂，規劃 LINE Bot 作為租屋協商入口，設計 AI 條件抽取流程，並參與 condition_json schema、缺漏欄位檢查與租約草稿生成流程討論。</dd>
-                        <dt>Tech Stack</dt><dd>LINE Bot / LINE Messaging API / Webhook / AI Agent / condition_json / Schema Validation / 資料預處理 / 租約草稿生成 / Node.js or Python / SQLite or MySQL / API Integration</dd>
                         <dt>Workflow</dt><dd>591 找房 → LINE 群組協商 → Bot 保存協商紀錄 → AI 整理租屋條件 → 產生租約草稿 → 雙方確認後自行簽署。</dd>
                         <dt>Status</dt><dd>正在開發與規劃實作中，已完成部分 POC 驗證；目前不描述為正式上線產品。</dd>
-                        <dt>What I Learned</dt><dd>將 AI 角色限制為「條件抽取器」，再由後端進行 schema 檢查與模板渲染，可降低生成式 AI 憑空產生租約內容的風險。目標是產出可供雙方確認的租約草稿，而非取代律師、公證人或正式電子簽章平台。</dd>
                     </dl>
-                    <ul class="project-bullets">
-                        <li>以 LINE 群組作為租屋協商場域，規劃 Bot 保存加入後的文字、圖片、檔案與時間戳，形成可追蹤的協商紀錄。</li>
-                        <li>設計 AI 條件抽取流程，將非結構化 LINE 對話整理為固定格式 condition_json。</li>
-                        <li>規劃缺漏欄位檢查機制，提醒雙方補充租金、押金、租期、水電、修繕、報稅、租補等尚未確認項目。</li>
-                    </ul>
                     <div class="project-actions">
-                        <a class="action-btn" href="#ecs-neo">View Case Study</a>
+                        <a class="action-btn" href="#ecs-case-study">View Case Study</a>
                         <a class="action-btn" href="#ecs-workflow">View Workflow</a>
                         <span class="action-btn disabled">View Demo · materials coming soon</span>
                     </div>
@@ -109,6 +102,16 @@
                         <img src="ECS_FLOW.jpg" alt="ECS NEO 租屋協商存證與租約草稿生成系統流程白板圖">
                         <figcaption>ECS NEO workflow draft: 從找房、LINE 群組協商、Bot 存證，到 AI 條件抽取與租約草稿生成。</figcaption>
                     </figure>
+                    <details class="case-study-notes" id="ecs-case-study">
+                        <summary>Case Study Notes</summary>
+                        <p><strong>Tech Stack:</strong> LINE Bot / LINE Messaging API / Webhook / AI Agent / condition_json / Schema Validation / 資料預處理 / 租約草稿生成 / API Integration</p>
+                        <p>將 AI 角色限制為「條件抽取器」，再由後端進行 schema 檢查與模板渲染，可降低生成式 AI 憑空產生租約內容的風險。目標是產出可供雙方確認的租約草稿，而非取代律師、公證人或正式電子簽章平台。</p>
+                        <ul class="project-bullets">
+                            <li>以 LINE 群組作為租屋協商場域，規劃 Bot 保存加入後的文字、圖片、檔案與時間戳，形成可追蹤的協商紀錄。</li>
+                            <li>設計 AI 條件抽取流程，將非結構化 LINE 對話整理為固定格式 condition_json。</li>
+                            <li>規劃缺漏欄位檢查機制，提醒雙方補充租金、押金、租期、水電、修繕、報稅、租補等尚未確認項目。</li>
+                        </ul>
+                    </details>
                 </article>
 
                 <article class="project-card" data-category="ai">
@@ -252,5 +255,7 @@
 </body>
 
 </html>
+
+
 
 

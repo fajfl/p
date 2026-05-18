@@ -229,8 +229,8 @@
 .workflow-figure img {
     display: block;
     width: 100%;
-    max-height: 34rem;
-    object-fit: cover;
+    max-height: none;
+    object-fit: contain;
 }
 
 .workflow-figure figcaption {
@@ -238,6 +238,27 @@
     color: #94a3b8;
     font-size: 0.82rem;
     line-height: 1.55;
+}
+.case-study-notes {
+    margin-top: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.45rem;
+    background: rgba(2, 6, 23, 0.42);
+    padding: 0.85rem 1rem;
+}
+
+.case-study-notes summary {
+    cursor: pointer;
+    color: #e0f2fe;
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+.case-study-notes p {
+    margin: 0.8rem 0 0;
+    color: #cbd5e1;
+    font-size: 0.92rem;
+    line-height: 1.65;
 }
 
 .tag-list,
@@ -296,3 +317,4 @@
         margin-top: 0.45rem;
     }
 }
+
