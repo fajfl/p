@@ -1,13 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-TW" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>吳振彥 (Chen-yen Wu) - Resume</title>
-    <!-- Tailwind CSS -->
+    <title>吳振彥 (Chen-yen Wu) - AI Automation Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
     <script>
@@ -15,9 +13,7 @@
             theme: {
                 extend: {
                     colors: {
-                        slate: {
-                            950: '#020617',
-                        }
+                        slate: { 950: '#020617' }
                     }
                 }
             }
@@ -25,660 +21,229 @@
     </script>
 </head>
 
-<body class="min-h-screen bg-slate-950 text-slate-200 selection:bg-cyan-500/30 selection:text-cyan-100 relative">
-
-    <!-- 背景裝飾 (Background Effects) -->
+<body class="min-h-screen bg-slate-950 text-slate-200 selection:bg-cyan-500/30 selection:text-cyan-100">
     <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-cyan-900/20 blur-[120px] rounded-full animate-pulse"
-            style="animation-duration: 4s;"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-900/20 blur-[120px] rounded-full animate-pulse"
-            style="animation-duration: 6s;"></div>
+        <div class="absolute top-[-12%] left-[-10%] w-[38%] h-[38%] bg-cyan-900/20 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-[-12%] right-[-10%] w-[38%] h-[38%] bg-emerald-900/20 blur-[120px] rounded-full"></div>
     </div>
 
-    <!-- 主要內容容器 -->
-    <div class="relative z-10 max-w-5xl mx-auto px-6 py-12 lg:py-20">
-
-        <!-- Header Section -->
-        <header class="mb-24 fade-in-up" style="animation-delay: 0.1s;">
-            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+    <main class="relative z-10 max-w-6xl mx-auto px-6 py-10 lg:py-14">
+        <header class="fade-in-up mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-end">
                 <div>
-                    <div
-                        class="inline-flex items-center px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-medium mb-6">
-                        <i data-lucide="terminal" class="w-4 h-4 mr-2"></i>
-                        Available for Opportunities
+                    <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-sm font-medium mb-5">
+                        <i data-lucide="workflow" class="w-4 h-4 mr-2"></i>
+                        AI Workflow / LINE Bot / System Integration / Prototype Builder
                     </div>
-                    <h1
-                        class="text-6xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400 mb-5 tracking-tight">
-                        吳振彥 <span class="text-4xl text-slate-500 block md:inline md:text-6xl font-light">(Chen-yen
-                            Wu)</span>
+                    <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white">
+                        吳振彥 <span class="block md:inline text-3xl md:text-5xl text-slate-500 font-light">Chen-yen Wu</span>
                     </h1>
-                    <p class="text-2xl text-cyan-400 font-medium tracking-wide">中原資管</p>
+                    <p class="mt-4 text-xl md:text-2xl text-cyan-400 font-medium">中原大學資訊管理系學生</p>
                 </div>
-                <div class="flex flex-col gap-4 text-slate-400 text-base">
-                    <div class="self-start md:self-end mb-2">
-                        <img src="profile_pic.jpg" alt="Zhen-yan Wu profile photo"
-                            class="w-36 h-36 md:w-44 md:h-44 object-cover rounded-2xl border border-white/15 shadow-2xl shadow-cyan-900/30">
-                    </div>
-                    <a href="mailto:k9404019487@gmail.com"
-                        class="flex items-center hover:text-white transition-colors group">
-                        <i data-lucide="mail" class="w-5 h-5 mr-3 group-hover:text-cyan-400 transition-colors"></i>
-                        k9404019487@gmail.com
+                <div class="flex md:flex-col gap-4 md:items-end text-slate-400 text-sm md:text-base">
+                    <img src="profile_pic.jpg" alt="Chen-yen Wu profile photo" class="hidden sm:block w-32 h-32 md:w-40 md:h-40 object-cover rounded-lg border border-white/15 shadow-2xl shadow-cyan-900/30">
+                    <a href="mailto:k9404019487@gmail.com" class="flex items-center hover:text-white transition-colors">
+                        <i data-lucide="mail" class="w-5 h-5 mr-2 text-cyan-400"></i>k9404019487@gmail.com
                     </a>
-                    <div class="flex items-center">
-                        <i data-lucide="map-pin" class="w-5 h-5 mr-3"></i>
-                        桃園, 台灣
-                    </div>
+                    <div class="flex items-center"><i data-lucide="map-pin" class="w-5 h-5 mr-2 text-cyan-400"></i>桃園市</div>
                 </div>
-            </div>
-            <div class="mt-10 max-w-4xl border-l-4 border-cyan-500/30 pl-8 py-3">
-                <p class="text-slate-400 leading-relaxed italic text-xl">
-                    「資管系大學生，習慣在資源受限的環境下找替代方案。從法律 RAG 系統的架構取捨、Flutter App 的 ETL pipeline，到共用 GPU 伺服器的網路建置，喜歡把問題解決掉。」
-                </p>
             </div>
         </header>
 
-        <!-- Main Grid Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
-
-            <!-- Left Column: Education, Skills, Interests -->
-            <div class="lg:col-span-4 space-y-16 fade-in-up" style="animation-delay: 0.3s;">
-
-                <!-- Education -->
-                <section>
-                    <h2 class="text-sm uppercase tracking-widest text-slate-500 font-bold mb-6 flex items-center">
-                        <i data-lucide="award" class="w-5 h-5 mr-2"></i> Education
-                    </h2>
-                    <div
-                        class="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-500/30 transition-colors duration-300">
-                        <h3 class="font-bold text-white text-xl">中原大學</h3>
-                        <p class="text-cyan-400 text-base font-medium">資訊管理學系</p>
-                        <p class="text-sm text-slate-500 mt-1 mb-5 font-mono">2023 - 至今</p>
-
-                        <div class="space-y-4">
-                            <!-- Presidential Award -->
-                            <div class="p-4 rounded bg-yellow-500/10 border border-yellow-500/20">
-                                <div class="flex items-center text-base font-bold text-yellow-500 mb-2">
-                                    <i data-lucide="trophy" class="w-5 h-5 mr-2"></i>
-                                    書卷獎 (Academic Achievement)
-                                </div>
-                                <p class="text-sm text-slate-400 leading-relaxed">
-                                    學期學業總成績優異，班級排名前三。
-                                </p>
-                            </div>
-
-                            <!-- Subject Awards -->
-                            <div class="p-4 rounded bg-cyan-900/10 border border-cyan-500/20">
-                                <div class="flex items-center text-base font-bold text-cyan-300 mb-2">
-                                    <i data-lucide="medal" class="w-5 h-5 mr-2"></i>
-                                    專業學科優異獎 (數次獲獎)
-                                </div>
-                                <p class="text-sm text-slate-400 leading-relaxed">
-                                    於 Java、Python、資料結構與資料庫 (MySQL) 等核心科目表現優異。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Certifications (New Section Highlight) -->
-                <section>
-                    <h2 class="text-sm uppercase tracking-widest text-slate-500 font-bold mb-6 flex items-center">
-                        <i data-lucide="badge-check" class="w-5 h-5 mr-2"></i> Certifications
-                    </h2>
-                    <div class="space-y-4">
-                        <!-- NVIDIA Cert -->
-                        <div
-                            class="group p-4 rounded-xl bg-gradient-to-r from-green-900/20 to-transparent border border-green-500/20 hover:border-green-500/40 transition-all flex items-start">
-                            <div class="mt-1 mr-4 p-2 rounded bg-green-900/30 text-green-400">
-                                <i data-lucide="cpu" class="w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-base font-bold text-white group-hover:text-green-400 transition-colors">
-                                    NVIDIA DLI Certificate</h4>
-                                <p class="text-sm text-slate-400 mt-1">深度學習基礎理論與實踐</p>
-                                <p class="text-xs text-slate-500 font-mono mt-1">Issued Nov 2025</p>
-                            </div>
-                        </div>
-
-                        <!-- n8n Cert -->
-                        <div
-                            class="group p-4 rounded-xl bg-gradient-to-r from-pink-900/20 to-transparent border border-pink-500/20 hover:border-pink-500/40 transition-all flex items-start">
-                            <div class="mt-1 mr-4 p-2 rounded bg-pink-900/30 text-pink-400">
-                                <i data-lucide="zap" class="w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-base font-bold text-white group-hover:text-pink-400 transition-colors">
-                                    n8n Level 2 Expert</h4>
-                                <p class="text-sm text-slate-400 mt-1">Workflow Automation Certified</p>
-                            </div>
-                        </div>
-
-                        <!-- TOEIC -->
-                        <div
-                            class="group p-4 rounded-xl bg-gradient-to-r from-orange-900/20 to-transparent border border-orange-500/20 hover:border-orange-500/40 transition-all flex items-start">
-                            <div class="mt-1 mr-4 p-2 rounded bg-orange-900/30 text-orange-400">
-                                <i data-lucide="languages" class="w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-base font-bold text-white group-hover:text-orange-400 transition-colors">
-                                    TOEIC 685</h4>
-                                <p class="text-sm text-slate-400 mt-1">English Proficiency Certification</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Skills -->
-                <section>
-                    <h2 class="text-sm uppercase tracking-widest text-slate-500 font-bold mb-6 flex items-center">
-                        <i data-lucide="layers" class="w-5 h-5 mr-2"></i> Technical Stack
-                    </h2>
-                    <div class="grid grid-cols-1 gap-5">
-
-                        <!-- Skill Card: Dev -->
-                        <div
-                            class="group p-5 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-500/30 transition-all">
-                            <div class="flex items-center mb-4">
-                                <i data-lucide="code-2" class="w-6 h-6 text-cyan-400"></i>
-                                <span class="ml-3 text-base font-semibold text-slate-300">程式開發</span>
-                            </div>
-                            <div class="flex flex-wrap gap-2.5">
-                                <span
-                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">Java
-                                </span>
-                                <span
-                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">JavaScript
-                                    / HTML / CSS</span>
-                                <span
-                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">Python</span>
-                                <span
-                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">MySQL</span>
-                            </div>
-                        </div>
-
-                        <!-- Skill Card: AI -->
-                        <div
-                            class="group p-5 rounded-xl bg-white/5 border border-white/10 hover:border-purple-500/30 transition-all">
-                            <div class="flex items-center mb-4">
-                                <i data-lucide="brain-circuit" class="w-6 h-6 text-purple-400"></i>
-                                <span class="ml-3 text-base font-semibold text-slate-300">AI & 自動化</span>
-                            </div>
-                            <div class="flex flex-wrap gap-2.5">
-                                <span
-                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">Qdrant</span>
-                                <span
-                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">Flux
-                                    / ComfyUI</span>
-                                <span
-                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">AI
-                                    Agent Dev</span>
-                            </div>
-                        </div>
-
-                        <!-- Skill Card: Network -->
-                        <div
-                            class="group p-5 rounded-xl bg-white/5 border border-white/10 hover:border-green-500/30 transition-all">
-                            <div class="flex items-center mb-4">
-                                <i data-lucide="network" class="w-6 h-6 text-green-400"></i>
-                                <span class="ml-3 text-base font-semibold text-slate-300">網路與系統</span>
-                            </div>
-                            <div class="flex flex-wrap gap-2.5">
-                                <span
-                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">Tailscale</span>
-                            </div>
-                        </div>
-
-                        <!-- Skill Card: Language -->
-                        <div
-                            class="group p-5 rounded-xl bg-white/5 border border-white/10 hover:border-orange-500/30 transition-all">
-                            <div class="flex items-center mb-4">
-                                <i data-lucide="globe" class="w-6 h-6 text-orange-400"></i>
-                                <span class="ml-3 text-base font-semibold text-slate-300">語言能力</span>
-                            </div>
-                            <div class="flex flex-wrap gap-2.5">
-                                <span
-                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">English</span>
-                                <span
-                                    class="text-xs px-3 py-1.5 rounded bg-slate-900 border border-white/5 text-slate-400 group-hover:text-slate-200 transition-colors">FLPT
-                                    西文 A1</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Personal Attributes (Modified to include Finance & Fitness) -->
-                <section>
-                    <h2 class="text-sm uppercase tracking-widest text-slate-500 font-bold mb-6 flex items-center">
-                        <i data-lucide="user" class="w-5 h-5 mr-2"></i> Personal Attributes
-                    </h2>
-
-                    <div class="space-y-5">
-                        <!-- Financial Analysis -->
-                        <div
-                            class="p-5 rounded-xl bg-white/5 border border-white/10 hover:border-blue-500/30 transition-all">
-                            <h3 class="font-bold text-white flex items-center text-base mb-3">
-                                <i data-lucide="trending-up" class="w-5 h-5 mr-3 text-blue-400"></i>
-                                金融觀察與數據分析
-                            </h3>
-                            <p class="text-sm text-slate-400 leading-relaxed">
-                                長期關注國際新聞、期貨與股市動向，習慣運用<strong>均線理論</strong>進行趨勢分析。這培養了我對<strong>數據波動的敏感度</strong>以及從宏觀角度思考問題的能力。
-                            </p>
-                        </div>
-
-                        <!-- Fitness & Kickboxing -->
-                        <div
-                            class="p-5 rounded-xl bg-gradient-to-br from-red-900/10 to-transparent border border-red-500/10 hover:border-red-500/30 transition-all">
-                            <h3 class="font-bold text-white flex items-center text-base mb-3">
-                                <i data-lucide="dumbbell" class="w-5 h-5 mr-3 text-red-400"></i>
-                                健身與散打搏擊
-                            </h3>
-                            <p class="text-sm text-slate-400 leading-relaxed">
-                                除了參與散打社團，也維持規律的重訓習慣。在高強度運動中磨練<strong>意志力</strong>，並學習在壓力下保持冷靜與專注。
-                            </p>
-                        </div>
-                    </div>
-                </section>
+        <section class="fade-in-up grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10" style="animation-delay: 0.1s;">
+            <div class="lg:col-span-2 p-6 rounded-lg bg-white/5 border border-white/10">
+                <h2 class="section-title"><i data-lucide="user-round" class="section-icon"></i>About Me</h2>
+                <p class="text-slate-300 leading-relaxed">
+                    資管系學生，具備 AI 自動化、LINE Bot、n8n workflow 與系統整合相關實作經驗。畢業專題聚焦於 LINE 租屋協商存證與租約草稿生成系統，嘗試將租屋協商對話、物件資訊與 AI 條件抽取流程整合為可追蹤、可確認的租約草稿生成工具。對 AI Agent、API 串接、資料處理、Webhook 與 prototype 開發有高度興趣，目前持續補強 Python、SQL、API 與系統設計能力，目標朝 AI 應用、自動化流程與系統整合方向發展。
+                </p>
             </div>
-
-            <!-- Right Column: Experience & Projects -->
-            <div class="lg:col-span-8 space-y-16 fade-in-up" style="animation-delay: 0.5s;">
-
-                <!-- Experience -->
-                <section>
-                    <h2 class="text-sm uppercase tracking-widest text-slate-500 font-bold mb-8 flex items-center">
-                        <i data-lucide="coffee" class="w-5 h-5 mr-2"></i> Experience
-                    </h2>
-                    <div class="space-y-10">
-
-                        <!-- Exp Item 1 -->
-                        <div
-                            class="relative pl-10 before:content-[''] before:absolute before:left-0 before:top-2 before:w-[3px] before:h-full before:bg-gradient-to-b before:from-cyan-500 before:to-transparent pb-4">
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
-                                <div>
-                                    <h3
-                                        class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
-                                        機場飲料店暑期人員</h3>
-                                    <p class="text-cyan-400 text-base font-medium mt-1">桃園國際機場管制區</p>
-                                </div>
-                                <span
-                                    class="text-sm text-slate-500 font-mono mt-2 md:mt-0 bg-slate-900 px-3 py-1.5 rounded border border-white/5">2023
-                                    Summer</span>
-                            </div>
-                            <ul class="mt-6 space-y-4">
-                                <li class="text-base text-slate-400 flex items-start leading-relaxed">
-                                    <span
-                                        class="text-cyan-500 mr-4 mt-2 w-2 h-2 rounded-full bg-cyan-500 shrink-0 shadow-[0_0_8px_rgba(6,182,212,0.6)]"></span>
-                                    <span><strong class="text-slate-300">英語環境溝通：</strong> 全英文應對多元國際旅客需求，展現語言自信。</span>
-                                </li>
-                                <li class="text-base text-slate-400 flex items-start leading-relaxed">
-                                    <span
-                                        class="text-cyan-500 mr-4 mt-2 w-2 h-2 rounded-full bg-cyan-500 shrink-0"></span>
-                                    <span><strong class="text-slate-300">極限危機處理：</strong>
-                                        曾在人力短缺與發票機故障的雙重壓力下，獨自承擔兩人份工作量，並成功協調跨店資源解決大排長龍的危機。</span>
-                                </li>
-                                <li class="text-base text-slate-400 flex items-start leading-relaxed">
-                                    <span
-                                        class="text-cyan-500 mr-4 mt-2 w-2 h-2 rounded-full bg-cyan-500 shrink-0"></span>
-                                    <span><strong class="text-slate-300">團隊協作：</strong> 在高壓環境下保持冷靜，獨自一人完成巨量訂單。</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </section>
-
-                <!-- Volunteer Experience (New Section) -->
-                <section>
-                    <h2 class="text-sm uppercase tracking-widest text-slate-500 font-bold mb-8 flex items-center">
-                        <i data-lucide="heart-handshake" class="w-5 h-5 mr-2"></i> Volunteer & Social Impact
-                    </h2>
-                    <div class="space-y-10">
-
-                        <!-- Volunteer Item 1: Marketing -->
-                        <div
-                            class="relative pl-10 before:content-[''] before:absolute before:left-0 before:top-2 before:w-[3px] before:h-full before:bg-gradient-to-b before:from-pink-500 before:to-transparent pb-4">
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
-                                <div>
-                                    <h3
-                                        class="text-2xl font-bold text-white group-hover:text-pink-400 transition-colors">
-                                        高齡者數位應用教學志工</h3>
-                                    <p class="text-pink-400 text-base font-medium mt-1">行銷學課程志工服務</p>
-                                </div>
-                            </div>
-                            <div class="mt-6 p-6 rounded-lg bg-white/5 border border-white/5">
-                                <p class="text-base text-slate-300 leading-relaxed italic mb-4">
-                                    "資訊人員還是需要貼近使用者需求。"
-                                </p>
-                                <ul class="space-y-3">
-                                    <li class="text-base text-slate-400 flex items-start leading-relaxed">
-                                        <span
-                                            class="text-pink-500 mr-4 mt-2 w-2 h-2 rounded-full bg-pink-500 shrink-0"></span>
-                                        <span>教導長者使用 Google Maps 與公車動態 App，解決生活中的數位落差。</span>
-                                    </li>
-                                    <li class="text-base text-slate-400 flex items-start leading-relaxed">
-                                        <span
-                                            class="text-pink-500 mr-4 mt-2 w-2 h-2 rounded-full bg-pink-500 shrink-0"></span>
-                                        <span>深刻體會到技術必須具備「易用性」，學會如何將複雜的資訊系統功能，轉化為使用者聽得懂的語言。</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Volunteer Item 2: Management -->
-                        <div
-                            class="relative pl-10 before:content-[''] before:absolute before:left-0 before:top-2 before:w-[3px] before:h-full before:bg-gradient-to-b before:from-green-500 before:to-transparent pb-4">
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
-                                <div>
-                                    <h3
-                                        class="text-2xl font-bold text-white group-hover:text-green-400 transition-colors">
-                                        新住民子女淨灘活動志工</h3>
-                                    <p class="text-green-400 text-base font-medium mt-1">管理學課程志工服務</p>
-                                </div>
-                            </div>
-                            <ul class="mt-6 space-y-3">
-                                <li class="text-base text-slate-400 flex items-start leading-relaxed">
-                                    <span
-                                        class="text-green-500 mr-4 mt-2 w-2 h-2 rounded-full bg-green-500 shrink-0"></span>
-                                    <span>陪伴新住民小朋友參與淨灘活動，落實環境永續與社會責任 (CSR)。</span>
-                                </li>
-                                <li class="text-base text-slate-400 flex items-start leading-relaxed">
-                                    <span
-                                        class="text-green-500 mr-4 mt-2 w-2 h-2 rounded-full bg-green-500 shrink-0"></span>
-                                    <span>培養跨文化的同理心與溝通能力，學習如何引導團隊完成共同目標。</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </section>
-
-                <!-- Projects -->
-                <section>
-                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-10 gap-5">
-                        <h2 class="text-sm uppercase tracking-widest text-slate-500 font-bold flex items-center">
-                            <i data-lucide="terminal" class="w-5 h-5 mr-3"></i> Featured Projects
-                        </h2>
-
-                        <!-- Filter Buttons -->
-                        <div class="flex gap-3 p-1.5 bg-white/5 rounded-lg border border-white/5" id="project-filters">
-                            <button onclick="filterProjects('all')"
-                                class="filter-btn active px-5 py-2 rounded-md text-xs font-medium transition-all duration-300 bg-cyan-500 text-slate-950 shadow-lg shadow-cyan-500/20"
-                                data-filter="all">
-                                ALL
-                            </button>
-                            <button onclick="filterProjects('ai')"
-                                class="filter-btn px-5 py-2 rounded-md text-xs font-medium transition-all duration-300 text-slate-400 hover:text-white hover:bg-white/5"
-                                data-filter="ai">
-                                AI / DATA
-                            </button>
-                            <button onclick="filterProjects('dev')"
-                                class="filter-btn px-5 py-2 rounded-md text-xs font-medium transition-all duration-300 text-slate-400 hover:text-white hover:bg-white/5"
-                                data-filter="dev">
-                                DEV / COMP
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-grid">
-
-                        <!-- Project 1: VR -->
-                        <div class="project-card visible-card group flex flex-col p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-cyan-500/30 transition-all duration-300 h-full"
-                            data-category="competition">
-                            <div class="flex justify-between items-start mb-6">
-                                <div
-                                    class="p-3 rounded-lg bg-slate-900 text-cyan-400 group-hover:scale-110 transition-transform">
-                                    <i data-lucide="trophy" class="w-6 h-6"></i>
-                                </div>
-                                <span
-                                    class="text-xs px-3 py-1.5 rounded-full bg-yellow-500/10 text-yellow-500 border border-yellow-500/20 font-bold tracking-wide">
-                                    決賽入圍
-                                </span>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
-                                高功能自閉症 VR 虛擬教學助理
-                            </h3>
-                            <p class="text-base text-slate-400 leading-relaxed mb-8 flex-grow">
-                                於「解決未來能力問題競賽」入圍決賽。針對教育與醫療領域，利用 VR 技術提供沈浸式學習。雖具專業門檻，但深刻體會到產品「使用者共鳴」的重要性。
-                            </p>
-                            <div class="flex flex-wrap gap-3 mt-auto pt-5 border-t border-white/5">
-                                <span
-                                    class="text-xs font-mono text-cyan-300/80 bg-cyan-900/20 px-3 py-1.5 rounded">#VR</span>
-                                <span
-                                    class="text-xs font-mono text-cyan-300/80 bg-cyan-900/20 px-3 py-1.5 rounded">#教育科技</span>
-                            </div>
-                        </div>
-
-                        <!-- Project 2: AI Art -->
-                        <div class="project-card visible-card group flex flex-col p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-cyan-500/30 transition-all duration-300 h-full"
-                            data-category="ai">
-                            <div class="flex justify-between items-start mb-6">
-                                <div
-                                    class="p-3 rounded-lg bg-slate-900 text-purple-400 group-hover:scale-110 transition-transform">
-                                    <i data-lucide="image" class="w-6 h-6"></i>
-                                </div>
-                                <span
-                                    class="text-xs px-3 py-1.5 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 font-bold tracking-wide">
-                                    入圍作品
-                                </span>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
-                                2024 燦坤 AI 智繪大賞 - 永續之境
-                            </h3>
-                            <p class="text-base text-slate-400 leading-relaxed mb-8 flex-grow">
-                                在硬體受限 (GTX 1650) 下，利用 Flux 與 ComfyUI 工作流，生成 1080p 高品質圖片。
-                            </p>
-                            <div class="flex flex-wrap gap-3 mt-auto pt-5 border-t border-white/5">
-                                <span
-                                    class="text-xs font-mono text-purple-300/80 bg-purple-900/20 px-3 py-1.5 rounded">#Flux</span>
-                                <span
-                                    class="text-xs font-mono text-purple-300/80 bg-purple-900/20 px-3 py-1.5 rounded">#ComfyUI</span>
-                                <span
-                                    class="text-xs font-mono text-purple-300/80 bg-purple-900/20 px-3 py-1.5 rounded">#ResourceOptimization</span>
-                            </div>
-                        </div>
-
-                        <!-- Project 3: AI Legal -->
-                        <div class="project-card visible-card group flex flex-col p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-cyan-500/30 transition-all duration-300 h-full"
-                            data-category="ai">
-                            <div class="flex justify-between items-start mb-6">
-                                <div
-                                    class="p-3 rounded-lg bg-slate-900 text-green-400 group-hover:scale-110 transition-transform">
-                                    <i data-lucide="scale" class="w-6 h-6"></i>
-                                </div>
-                                <span
-                                    class="text-xs px-3 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 font-bold tracking-wide">
-                                    開發中
-                                </span>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
-                                AI 法律顧問 & n8n 工作流
-                            </h3>
-                            <p class="text-base text-slate-400 leading-relaxed mb-8 flex-grow">
-                                利用 n8n 自動化工作流串接 LLM 後端，旨在降低法律諮詢門檻。實作從 User Input 到 AI 分析再到結構化輸出的完整 Pipeline。
-                            </p>
-                            <div class="flex flex-wrap gap-3 mt-auto pt-5 border-t border-white/5">
-                                <span
-                                    class="text-xs font-mono text-green-300/80 bg-green-900/20 px-3 py-1.5 rounded">#n8n</span>
-                                <span
-                                    class="text-xs font-mono text-green-300/80 bg-green-900/20 px-3 py-1.5 rounded">#LLM</span>
-                                <span
-                                    class="text-xs font-mono text-green-300/80 bg-green-900/20 px-3 py-1.5 rounded">#Automation</span>
-                            </div>
-                        </div>
-
-                        <!-- Project 4: iOS App -->
-                        <div class="project-card visible-card group flex flex-col p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-cyan-500/30 transition-all duration-300 h-full"
-                            data-category="dev">
-                            <div class="flex justify-between items-start mb-6">
-                                <div
-                                    class="p-3 rounded-lg bg-slate-900 text-orange-400 group-hover:scale-110 transition-transform">
-                                    <i data-lucide="smartphone" class="w-6 h-6"></i>
-                                </div>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
-                                iOS 今天吃甚麼 APP
-                            </h3>
-                            <p class="text-base text-slate-400 leading-relaxed mb-8 flex-grow">
-                                課堂開發作品，解決日常選擇困難。專注於直覺的 UI 設計與流暢的 UX 體驗，整合隨機演算法與簡易資料庫。
-                            </p>
-                            <div class="flex flex-wrap gap-3 mt-auto pt-5 border-t border-white/5">
-                                <span
-                                    class="text-xs font-mono text-orange-300/80 bg-orange-900/20 px-3 py-1.5 rounded">#Swift</span>
-                                <span
-                                    class="text-xs font-mono text-orange-300/80 bg-orange-900/20 px-3 py-1.5 rounded">#iOS</span>
-                                <span
-                                    class="text-xs font-mono text-orange-300/80 bg-orange-900/20 px-3 py-1.5 rounded">#UI/UX</span>
-                            </div>
-                        </div>
-
-                        <!-- Project 5: TOEIC App -->
-                        <div class="project-card visible-card group flex flex-col p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-cyan-500/30 transition-all duration-300 h-full"
-                            data-category="dev">
-                            <div class="flex justify-between items-start mb-6">
-                                <div
-                                    class="p-3 rounded-lg bg-slate-900 text-cyan-400 group-hover:scale-110 transition-transform">
-                                    <i data-lucide="book-open-check" class="w-6 h-6"></i>
-                                </div>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
-                                TOEIC App
-                            </h3>
-                            <p class="text-base text-slate-400 leading-relaxed mb-8 flex-grow">
-                                Flutter 跨平台學習 App，整合本地 Gemma ETL pipeline 清洗開源題庫並結構化為 JSON，Google TTS 模擬聽力練習，支援 Listening / Vocabulary / Quiz 模組。
-                            </p>
-                            <div class="flex flex-wrap gap-3 mt-auto pt-5 border-t border-white/5">
-                                <span
-                                    class="text-xs font-mono text-cyan-300/80 bg-cyan-900/20 px-3 py-1.5 rounded">#Flutter</span>
-                                <span
-                                    class="text-xs font-mono text-cyan-300/80 bg-cyan-900/20 px-3 py-1.5 rounded">#Python</span>
-                                <span
-                                    class="text-xs font-mono text-cyan-300/80 bg-cyan-900/20 px-3 py-1.5 rounded">#ETL</span>
-                                <span
-                                    class="text-xs font-mono text-cyan-300/80 bg-cyan-900/20 px-3 py-1.5 rounded">#Gemma</span>
-                            </div>
-                        </div>
-
-                        <!-- Project 6: NBA Store -->
-                        <div class="project-card visible-card group flex flex-col p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-cyan-500/30 transition-all duration-300 h-full"
-                            data-category="dev">
-                            <div class="flex justify-between items-start mb-6">
-                                <div
-                                    class="p-3 rounded-lg bg-slate-900 text-indigo-400 group-hover:scale-110 transition-transform">
-                                    <i data-lucide="shopping-cart" class="w-6 h-6"></i>
-                                </div>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
-                                NBA 卡包購物商城
-                            </h3>
-                            <p class="text-base text-slate-400 leading-relaxed mb-8 flex-grow">
-                                課程五人專案，Java Servlet + Apache Tomcat + MySQL，完整電商功能含登入、購物車、訂單管理。
-                            </p>
-                            <div class="flex flex-wrap gap-3 mt-auto pt-5 border-t border-white/5">
-                                <span
-                                    class="text-xs font-mono text-indigo-300/80 bg-indigo-900/20 px-3 py-1.5 rounded">#Java</span>
-                                <span
-                                    class="text-xs font-mono text-indigo-300/80 bg-indigo-900/20 px-3 py-1.5 rounded">#MySQL</span>
-                                <span
-                                    class="text-xs font-mono text-indigo-300/80 bg-indigo-900/20 px-3 py-1.5 rounded">#Servlet</span>
-                            </div>
-                        </div>
-
-                        <!-- Project 7: Remote GPU -->
-                        <div class="project-card visible-card group flex flex-col p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-cyan-500/30 transition-all duration-300 h-full"
-                            data-category="dev">
-                            <div class="flex justify-between items-start mb-6">
-                                <div
-                                    class="p-3 rounded-lg bg-slate-900 text-emerald-400 group-hover:scale-110 transition-transform">
-                                    <i data-lucide="server" class="w-6 h-6"></i>
-                                </div>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
-                                遠端 GPU 環境建置
-                            </h3>
-                            <p class="text-base text-slate-400 leading-relaxed mb-8 flex-grow">
-                                獨立為五人專題組建置共用 RTX 4050 遠端存取環境。Docker + RustDesk 轉向 Moonlight/Sunshine + Tailscale，在不得使用中國軟體的限制下多次替換方案，最終交付穩定可用的共享開發環境。
-                            </p>
-                            <div class="flex flex-wrap gap-3 mt-auto pt-5 border-t border-white/5">
-                                <span
-                                    class="text-xs font-mono text-emerald-300/80 bg-emerald-900/20 px-3 py-1.5 rounded">#Docker</span>
-                                <span
-                                    class="text-xs font-mono text-emerald-300/80 bg-emerald-900/20 px-3 py-1.5 rounded">#Tailscale</span>
-                                <span
-                                    class="text-xs font-mono text-emerald-300/80 bg-emerald-900/20 px-3 py-1.5 rounded">#Networking</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-
+            <div class="p-6 rounded-lg bg-white/5 border border-white/10">
+                <h2 class="section-title"><i data-lucide="briefcase-business" class="section-icon"></i>Target Roles</h2>
+                <p class="text-slate-300 leading-relaxed">
+                    希望從事 AI 應用、自動化流程、系統整合或軟體開發相關工作，接觸實際產品或流程問題，透過 LINE Bot、API 與 AI workflow 工具提升流程效率與使用者體驗，並持續累積實務開發經驗。
+                </p>
             </div>
-        </div>
+        </section>
 
-        <!-- Footer -->
-        <footer
-            class="mt-32 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-sm">
-            <p>© 2024 Chen-yen Wu. All rights reserved.</p>
-            <div class="flex gap-8">
-                <a href="#" class="hover:text-white transition-colors flex items-center gap-2">
-                    <i data-lucide="github" class="w-4 h-4"></i> GitHub
-                </a>
-                <a href="mailto:k9404019487@gmail.com"
-                    class="hover:text-white transition-colors flex items-center gap-2">
-                    <i data-lucide="mail" class="w-4 h-4"></i> Contact Me
-                </a>
+        <section class="fade-in-up mb-12" style="animation-delay: 0.2s;">
+            <div class="flex items-center justify-between gap-4 mb-6">
+                <h2 class="section-title mb-0"><i data-lucide="terminal" class="section-icon"></i>Featured Projects</h2>
+                <div class="hidden md:flex items-center gap-2 text-xs text-slate-500 font-mono">
+                    <span>LINE Bot</span><span>/</span><span>AI Agent</span><span>/</span><span>Webhook</span><span>/</span><span>Prototype</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <article class="project-card md:col-span-2" data-category="ai" id="ecs-neo">
+                    <div class="project-head">
+                        <span class="status status-dev">開發中 / 畢業專題</span>
+                        <i data-lucide="messages-square" class="project-icon text-cyan-400"></i>
+                    </div>
+                    <h3 class="project-title">ECS NEO｜LINE 租屋協商存證與租約草稿生成系統</h3>
+                    <p class="project-summary">
+                        本專題開發一套結合 LINE Bot 與 AI 的租屋協商輔助系統，協助房東與房客在 LINE 群組中保存租屋協商紀錄，並透過 AI 從對話中整理租金、押金、租期、水電、設備、修繕責任等租屋條件，最後產生租約草稿，降低日後租屋糾紛。
+                    </p>
+                    <div class="project-meta">
+                        <span><strong>Status:</strong> In Development / Graduation Project</span>
+                        <span><strong>Code:</strong> Private / Not Public</span>
+                        <span><strong>Demo:</strong> Screenshots, workflow diagrams, presentation materials</span>
+                    </div>
+                    <dl class="project-detail">
+                        <dt>Problem</dt><dd>租屋協商常分散在 LINE 對話、物件頁面與口頭確認中，日後容易缺少可追蹤、可確認的條件紀錄。</dd>
+                        <dt>My Role</dt><dd>參與系統架構規劃與畢業專題方向收斂，規劃 LINE Bot 作為租屋協商入口，設計 AI 條件抽取流程，並參與 condition_json schema、缺漏欄位檢查與租約草稿生成流程討論。</dd>
+                        <dt>Tech Stack</dt><dd>LINE Bot / LINE Messaging API / Webhook / AI Agent / condition_json / Schema Validation / 資料預處理 / 租約草稿生成 / Node.js or Python / SQLite or MySQL / API Integration</dd>
+                        <dt>Workflow</dt><dd>591 找房 → LINE 群組協商 → Bot 保存協商紀錄 → AI 整理租屋條件 → 產生租約草稿 → 雙方確認後自行簽署。</dd>
+                        <dt>Status</dt><dd>正在開發與規劃實作中，已完成部分 POC 驗證；目前不描述為正式上線產品。</dd>
+                        <dt>What I Learned</dt><dd>將 AI 角色限制為「條件抽取器」，再由後端進行 schema 檢查與模板渲染，可降低生成式 AI 憑空產生租約內容的風險。目標是產出可供雙方確認的租約草稿，而非取代律師、公證人或正式電子簽章平台。</dd>
+                    </dl>
+                    <ul class="project-bullets">
+                        <li>以 LINE 群組作為租屋協商場域，規劃 Bot 保存加入後的文字、圖片、檔案與時間戳，形成可追蹤的協商紀錄。</li>
+                        <li>設計 AI 條件抽取流程，將非結構化 LINE 對話整理為固定格式 condition_json。</li>
+                        <li>規劃缺漏欄位檢查機制，提醒雙方補充租金、押金、租期、水電、修繕、報稅、租補等尚未確認項目。</li>
+                    </ul>
+                    <div class="project-actions">
+                        <a class="action-btn" href="#ecs-neo">View Case Study</a>
+                        <a class="action-btn" href="#ecs-workflow">View Workflow</a>
+                        <span class="action-btn disabled">View Demo · materials coming soon</span>
+                    </div>
+                    <figure class="workflow-figure" id="ecs-workflow">
+                        <img src="ECS_FLOW.jpg" alt="ECS NEO 租屋協商存證與租約草稿生成系統流程白板圖">
+                        <figcaption>ECS NEO workflow draft: 從找房、LINE 群組協商、Bot 存證，到 AI 條件抽取與租約草稿生成。</figcaption>
+                    </figure>
+                </article>
+
+                <article class="project-card" data-category="ai">
+                    <div class="project-head"><span class="status status-done">已完成 / 課程專案</span><i data-lucide="scale" class="project-icon text-emerald-400"></i></div>
+                    <h3 class="project-title">n8n 法律資訊 AI Agent</h3>
+                    <div class="project-meta compact">
+                        <span><strong>Status:</strong> Completed / Course Project</span>
+                        <span><strong>Code:</strong> Private / Not Public</span>
+                        <span><strong>Demo:</strong> Screenshots, n8n workflow screenshots, architecture diagram</span>
+                    </div>
+                    <dl class="project-detail">
+                        <dt>Problem</dt><dd>法律條文資料量大，初步查詢與理解成本高。</dd>
+                        <dt>My Role</dt><dd>系統分析課程五人專題，負責核心系統流程與後端整合。</dd>
+                        <dt>Tech Stack</dt><dd>n8n Webhook、AI Agent、RAG、Qdrant、本地向量資料庫。</dd>
+                        <dt>Workflow</dt><dd>使用 n8n Webhook 串接前端輸入與 AI Agent，結合法律條文資料預處理與 RAG 流程，處理約 3,500+ 法條 chunks。</dd>
+                        <dt>Status</dt><dd>已完成法律資訊問答 prototype，課程成果 100 分。</dd>
+                        <dt>What I Learned</dt><dd>負責爬蟲資料清理、條文切分、workflow 設計與 AI 回覆流程，練習將資料處理、向量檢索與自動化流程整合成可展示 prototype。</dd>
+                    </dl>
+                    <div class="project-actions">
+                        <span class="action-btn disabled">View Case Study · coming soon</span>
+                        <span class="action-btn disabled">View Workflow · coming soon</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="dev">
+                    <div class="project-head"><span class="status status-practice">個人技術練習 / 原型嘗試</span><i data-lucide="book-open-check" class="project-icon text-cyan-400"></i></div>
+                    <h3 class="project-title">TOEIC 題庫 AI 標籤與練習 App</h3>
+                    <div class="project-meta compact">
+                        <span><strong>Status:</strong> Prototype / Practice</span>
+                        <span><strong>Code:</strong> Private / Prototype Only</span>
+                        <span><strong>Demo:</strong> Demo materials coming soon</span>
+                    </div>
+                    <dl class="project-detail">
+                        <dt>Problem</dt><dd>嘗試將開源題庫清洗、標籤化並轉成可練習的資料格式。</dd>
+                        <dt>My Role</dt><dd>個人自主開發，尚非正式產品。</dd>
+                        <dt>Tech Stack</dt><dd>Flutter、Python ETL pipeline、Gemma / local AI model、Google TTS、JSON。</dd>
+                        <dt>Workflow</dt><dd>清洗與結構化開源題庫，使用本地 AI 模型進行題目標籤，並整合 Google TTS 模擬聽力練習。</dd>
+                        <dt>Status</dt><dd>支援 Listening、Vocabulary、Quiz 等練習模組，定位為技術練習與原型嘗試。</dd>
+                        <dt>What I Learned</dt><dd>作為 AI tag、ETL 與題庫資料處理練習，驗證資料清理流程如何支援練習介面。</dd>
+                    </dl>
+                    <div class="project-actions">
+                        <span class="action-btn disabled">View Demo · materials coming soon</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="dev">
+                    <div class="project-head"><span class="status status-done">已完成 / 課程專案</span><i data-lucide="shopping-cart" class="project-icon text-indigo-400"></i></div>
+                    <h3 class="project-title">NBA 卡包購物商城</h3>
+                    <div class="project-meta compact">
+                        <span><strong>Status:</strong> Completed / Course Project</span>
+                        <span><strong>Code:</strong> Private / Not Public</span>
+                    </div>
+                    <dl class="project-detail">
+                        <dt>Problem</dt><dd>以課程專案練習基本電商網站流程與資料庫整合。</dd>
+                        <dt>My Role</dt><dd>課程五人專案成員，參與前後端與資料庫整合。</dd>
+                        <dt>Tech Stack</dt><dd>Java Servlet、Tomcat、MySQL。</dd>
+                        <dt>Workflow</dt><dd>建立登入、購物車與訂單流程等基本電商功能。</dd>
+                        <dt>Status</dt><dd>已完成課程要求的基本電商功能。</dd>
+                        <dt>What I Learned</dt><dd>作為前後端與資料庫整合基礎練習。</dd>
+                    </dl>
+                </article>
+
+                <article class="project-card" data-category="system">
+                    <div class="project-head"><span class="status status-proto">原型嘗試</span><i data-lucide="server" class="project-icon text-emerald-400"></i></div>
+                    <h3 class="project-title">遠端系統環境建置</h3>
+                    <div class="project-meta compact">
+                        <span><strong>Status:</strong> Internal Setup / Prototype</span>
+                        <span><strong>Code:</strong> Not Applicable</span>
+                    </div>
+                    <dl class="project-detail">
+                        <dt>Problem</dt><dd>專題組需要共用 RTX 4050 遠端開發與運算資源。</dd>
+                        <dt>My Role</dt><dd>獨立建置與測試遠端存取環境。</dd>
+                        <dt>Tech Stack</dt><dd>Docker、RustDesk、Moonlight、Sunshine、Tailscale。</dd>
+                        <dt>Workflow</dt><dd>先嘗試 Docker + RustDesk，後續改為 Moonlight / Sunshine + Tailscale 等方案。</dd>
+                        <dt>Status</dt><dd>完成遠端開發與運算資源共享環境。</dd>
+                        <dt>What I Learned</dt><dd>在限制條件下多次替換方案，練習系統整合與遠端環境建置的取捨。</dd>
+                    </dl>
+                </article>
+            </div>
+        </section>
+
+        <section class="fade-in-up grid grid-cols-1 lg:grid-cols-3 gap-5 mb-10" style="animation-delay: 0.3s;">
+            <div class="info-card">
+                <h2 class="section-title"><i data-lucide="bot" class="section-icon"></i>AI / Automation</h2>
+                <ul class="tag-list">
+                    <li>n8n Level 2</li><li>AI Agent workflow</li><li>RAG / LLM 應用概念</li><li>condition_json / schema-based extraction</li><li>Ollama / local LLM usage</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h2 class="section-title"><i data-lucide="database" class="section-icon"></i>Programming / Data</h2>
+                <ul class="tag-list">
+                    <li>Python</li><li>Java</li><li>JavaScript</li><li>SQL / MySQL</li><li>JSON / API / Webhook</li><li>ETL / 資料預處理</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h2 class="section-title"><i data-lucide="wrench" class="section-icon"></i>System / Tools</h2>
+                <ul class="tag-list">
+                    <li>Docker</li><li>GitHub</li><li>Qdrant</li><li>Tomcat</li><li>Linux / WSL 基礎</li><li>Tailscale / RustDesk / Moonlight / Sunshine</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="fade-in-up grid grid-cols-1 lg:grid-cols-3 gap-5" style="animation-delay: 0.4s;">
+            <div class="info-card lg:col-span-2">
+                <h2 class="section-title"><i data-lucide="badge-check" class="section-icon"></i>Awards & Certifications</h2>
+                <ul class="plain-list columns-1 sm:columns-2">
+                    <li>n8n Level 2 Certification</li>
+                    <li>NVIDIA Deep Learning Institute｜Fundamentals of Deep Learning</li>
+                    <li>解決未來問題能力競賽｜入圍</li>
+                    <li>衛星數位應用創新大賽｜入圍</li>
+                    <li>2024 燦坤 AI 智繪大賞｜入圍</li>
+                    <li>書券獎 ×1</li>
+                    <li>專業學科優異獎 ×3</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h2 class="section-title"><i data-lucide="graduation-cap" class="section-icon"></i>Education</h2>
+                <h3 class="font-bold text-white text-lg">中原大學</h3>
+                <p class="text-cyan-400 font-medium mt-1">資訊管理學系</p>
+                <p class="text-sm text-slate-500 font-mono mt-1">2023 - 至今</p>
+            </div>
+        </section>
+
+        <footer class="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4 text-slate-500 text-sm">
+            <p>© 2026 Chen-yen Wu. Resume / Portfolio.</p>
+            <div class="flex flex-wrap gap-6">
+                <a href="https://github.com/fajfl" class="hover:text-white transition-colors flex items-center gap-2"><i data-lucide="github" class="w-4 h-4"></i>GitHub</a>
+                <a href="mailto:k9404019487@gmail.com" class="hover:text-white transition-colors flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4"></i>Contact</a>
+                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i>桃園市</span>
             </div>
         </footer>
+    </main>
 
-    </div>
-
-    <!-- JavaScript 邏輯 -->
     <script>
-        // 初始化 Lucide Icons
         lucide.createIcons();
-
-        // 專案過濾邏輯
-        function filterProjects(filter) {
-            const cards = document.querySelectorAll('.project-card');
-            const buttons = document.querySelectorAll('.filter-btn');
-
-            // 更新按鈕狀態
-            buttons.forEach(btn => {
-                if (btn.dataset.filter === filter) {
-                    btn.classList.add('bg-cyan-500', 'text-slate-950', 'shadow-lg', 'shadow-cyan-500/20');
-                    btn.classList.remove('text-slate-400', 'hover:text-white', 'hover:bg-white/5');
-                } else {
-                    btn.classList.remove('bg-cyan-500', 'text-slate-950', 'shadow-lg', 'shadow-cyan-500/20');
-                    btn.classList.add('text-slate-400', 'hover:text-white', 'hover:bg-white/5');
-                }
-            });
-
-            // 過濾卡片
-            cards.forEach(card => {
-                const category = card.dataset.category;
-
-                // 邏輯：
-                // 'all' -> 顯示全部
-                // 'ai' -> 顯示 category 為 'ai' 的
-                // 'dev' -> 顯示 category 為 'dev' 或 'competition' 的
-
-                let shouldShow = false;
-                if (filter === 'all') {
-                    shouldShow = true;
-                } else if (filter === 'ai' && category === 'ai') {
-                    shouldShow = true;
-                } else if (filter === 'dev' && (category === 'dev' || category === 'competition')) {
-                    shouldShow = true;
-                }
-
-                if (shouldShow) {
-                    card.classList.remove('hidden-card');
-                    card.classList.add('visible-card');
-                } else {
-                    card.classList.add('hidden-card');
-                    card.classList.remove('visible-card');
-                }
-            });
-        }
     </script>
 </body>
 
