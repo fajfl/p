@@ -116,20 +116,22 @@
                     <h3 class="project-title">n8n 法律資訊 AI Agent</h3>
                     <div class="project-meta compact">
                         <span><strong>Status:</strong> Completed / Course Project</span>
-                        <span><strong>Code:</strong> Private / Not Public</span>
+                        <span><strong>Code:</strong> Public Repository</span>
+                        <span><strong>GitHub:</strong> https://github.com/fajfl/law-agent-by-n8n</span>
                         <span><strong>Demo:</strong> Screenshots, n8n workflow screenshots, architecture diagram</span>
                     </div>
                     <dl class="project-detail">
-                        <dt>Problem</dt><dd>法律條文資料量大，初步查詢與理解成本高。</dd>
-                        <dt>My Role</dt><dd>系統分析課程五人專題，負責核心系統流程與後端整合。</dd>
-                        <dt>Tech Stack</dt><dd>n8n Webhook、AI Agent、RAG、Qdrant、本地向量資料庫。</dd>
-                        <dt>Workflow</dt><dd>使用 n8n Webhook 串接前端輸入與 AI Agent，結合法律條文資料預處理與 RAG 流程，處理約 3,500+ 法條 chunks。</dd>
-                        <dt>Status</dt><dd>已完成法律資訊問答 prototype，課程成果 100 分。</dd>
-                        <dt>What I Learned</dt><dd>負責爬蟲資料清理、條文切分、workflow 設計與 AI 回覆流程，練習將資料處理、向量檢索與自動化流程整合成可展示 prototype。</dd>
+                        <dt>Problem</dt><dd>法律條文資料量大，初步查詢與理解成本高，因此以課程期末專題與履歷作品集形式建立可驗證的法律資訊問答 prototype。</dd>
+                        <dt>My Role</dt><dd>主要負責後端資料流、n8n workflow、RAG 流程、前後端串接與部署流程整合。</dd>
+                        <dt>Tech Stack</dt><dd>n8n Workflow、Webhook、AI Agent、Memory Buffer、Qdrant Vector Store、Ollama Embedding、RAG、docker-compose。</dd>
+                        <dt>Workflow</dt><dd>前端聊天介面透過 Webhook 串接 n8n，由 n8n workflow 整合 AI Agent、Memory Buffer、Qdrant Vector Store 與 Ollama Embedding，結合法律條文資料預處理與 RAG 流程，處理約 3,500+ 法條 chunks。</dd>
+                        <dt>Status</dt><dd>已完成法律資訊問答 prototype，課程成果 100 分；repo 作為課程期末專題與履歷作品集公開展示。</dd>
+                        <dt>What I Learned</dt><dd>練習把資料清理、條文切分、向量檢索、n8n 自動化流程、前端聊天介面與 docker-compose 部署流程整合成可展示 prototype。</dd>
                     </dl>
                     <div class="project-actions">
                         <span class="action-btn disabled">View Case Study · coming soon</span>
                         <span class="action-btn disabled">View Workflow · coming soon</span>
+                        <a class="action-btn" href="https://github.com/fajfl/law-agent-by-n8n" target="_blank" rel="noopener noreferrer">View GitHub</a>
                     </div>
                 </article>
 
@@ -138,19 +140,21 @@
                     <h3 class="project-title">TOEIC 題庫 AI 標籤與練習 App</h3>
                     <div class="project-meta compact">
                         <span><strong>Status:</strong> Prototype / Practice</span>
-                        <span><strong>Code:</strong> Private / Prototype Only</span>
+                        <span><strong>Code:</strong> Public Prototype</span>
+                        <span><strong>GitHub:</strong> https://github.com/fajfl/toeic_for_pratice</span>
                         <span><strong>Demo:</strong> Demo materials coming soon</span>
                     </div>
                     <dl class="project-detail">
-                        <dt>Problem</dt><dd>嘗試將開源題庫清洗、標籤化並轉成可練習的資料格式。</dd>
-                        <dt>My Role</dt><dd>個人自主開發，尚非正式產品。</dd>
-                        <dt>Tech Stack</dt><dd>Flutter、Python ETL pipeline、Gemma / local AI model、Google TTS、JSON。</dd>
-                        <dt>Workflow</dt><dd>清洗與結構化開源題庫，使用本地 AI 模型進行題目標籤，並整合 Google TTS 模擬聽力練習。</dd>
-                        <dt>Status</dt><dd>支援 Listening、Vocabulary、Quiz 等練習模組，定位為技術練習與原型嘗試。</dd>
-                        <dt>What I Learned</dt><dd>作為 AI tag、ETL 與題庫資料處理練習，驗證資料清理流程如何支援練習介面。</dd>
+                        <dt>Problem</dt><dd>嘗試用 Flutter + AI ETL 建立 TOEIC 題庫練習流程，把開源題庫清洗、標籤化並轉成可練習的資料格式。</dd>
+                        <dt>My Role</dt><dd>個人自主開發，定位為個人技術練習 / prototype，尚非正式產品。</dd>
+                        <dt>Tech Stack</dt><dd>Flutter、Chrome / Android、Python ETL pipeline、Ollama、Gemma、Google TTS、JSON。</dd>
+                        <dt>Workflow</dt><dd>使用 Python ETL pipeline 清洗與結構化開源題庫，透過本地 Ollama + Gemma 進行資料清洗、標籤、題目生成與 difficulty / cloze target 補充，並支援快取、續跑、增量處理以降低重跑成本。</dd>
+                        <dt>Status</dt><dd>目前可執行平台包含 Chrome 與 Android，模組包含 Listening / Vocabulary / Quiz / Diagnostic。</dd>
+                        <dt>What I Learned</dt><dd>作為 AI tag、ETL 與題庫資料處理練習，驗證資料清理與標註流程如何支援跨平台練習介面。</dd>
                     </dl>
                     <div class="project-actions">
                         <span class="action-btn disabled">View Demo · materials coming soon</span>
+                        <a class="action-btn" href="https://github.com/fajfl/toeic_for_pratice" target="_blank" rel="noopener noreferrer">View GitHub</a>
                     </div>
                 </article>
 
@@ -248,3 +252,5 @@
 </body>
 
 </html>
+
+

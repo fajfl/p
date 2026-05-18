@@ -62,21 +62,25 @@ ECS NEO 是我的畢業專題，主題聚焦於 LINE 租屋協商存證與租約
 ### n8n 法律資訊 AI Agent
 
 Status: Completed / Course Project  
-Code: Private / Not Public  
+Code: Public Repository  
+GitHub: https://github.com/fajfl/law-agent-by-n8n  
 Demo: Screenshots, n8n workflow screenshots, architecture diagram
 
-這是系統分析課程的五人專題。我負責核心系統流程與後端整合，使用 n8n Webhook 串接前端輸入與 AI Agent，結合法律條文資料預處理與 RAG 流程，並使用 Qdrant 本地向量資料庫處理約 3,500+ 法條 chunks。課程成果為 100 分。
+這是系統分析課程的五人期末專題，也作為我的履歷作品集專案之一。專案使用 n8n Workflow + RAG 建立法律資訊問答 prototype，前端聊天介面透過 Webhook 串接 n8n，n8n workflow 中包含 AI Agent、Memory Buffer、Qdrant Vector Store 與 Ollama Embedding，並使用 docker-compose 啟動 n8n、Ollama、Qdrant 等服務。
 
-我在這個專案中練習了爬蟲資料清理、條文切分、workflow 設計與 AI 回覆流程，也更理解 RAG prototype 不只是接上模型，還需要處理資料品質、查詢流程與回覆邊界。
+我主要負責後端資料流、n8n workflow、RAG 流程、前後端串接與部署流程整合。這個專案讓我更理解 RAG prototype 不只是接上模型，還需要處理資料品質、查詢流程、向量資料庫、workflow 編排與回覆邊界。課程成果為 100 分。
 
 ### TOEIC 題庫 AI 標籤與練習 App
 
 Status: Personal Practice / Prototype  
-Code: Private / Prototype Only
+Code: Public Prototype  
+GitHub: https://github.com/fajfl/toeic_for_pratice
 
-這是我的個人技術練習作品。我嘗試使用 Flutter 建立跨平台練習介面，並以 Python ETL pipeline 清洗與結構化開源 TOEIC 題庫。專案也嘗試使用本地 Gemma / AI 模型進行題目標籤，並整合 Google TTS 模擬聽力練習。
+這是我的個人技術練習作品，定位為 Flutter + AI ETL 的 TOEIC 學習 App prototype。目前可執行平台包含 Chrome 與 Android，模組包含 Listening / Vocabulary / Quiz / Diagnostic。
 
-這個專案主要是為了練習 AI tag、ETL 與題庫資料處理，不會把它描述成正式產品。
+我使用 Python ETL pipeline 清洗與結構化開源題庫，並嘗試用本地 Ollama + Gemma 進行資料清洗、標籤、題目生成與 difficulty / cloze target 補充。ETL 流程支援快取、續跑與增量處理，目標是降低重跑成本。
+
+這個專案主要是為了練習 AI tag、ETL、題庫資料處理與跨平台練習介面，不會把它描述成正式產品。
 
 ### NBA 卡包購物商城
 
@@ -147,3 +151,4 @@ http://127.0.0.1:8091/
 - Email: k9404019487@gmail.com
 - Location: 桃園市
 - GitHub: https://github.com/fajfl
+
