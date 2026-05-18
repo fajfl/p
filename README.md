@@ -1,21 +1,21 @@
 ﻿# Chen-yen Wu Portfolio
 
-GitHub Pages portfolio for Chen-yen Wu, a Chung Yuan Christian University Information Management student focused on AI automation, LINE Bot workflows, API integration, data processing, system integration, and prototype development.
+這是吳振彥的 GitHub Pages 個人履歷與 portfolio 原始碼。內容定位為「AI 自動化與系統整合導向的資管系學生」，重點放在 AI workflow、LINE Bot、API 串接、資料處理、系統整合與 prototype 開發。
 
-Live site:
+網站連結：
 - https://fajfl.github.io/p/
 
-## Positioning
+## 內容定位
 
-This portfolio presents me as an AI automation and system integration oriented MIS student. The content is intentionally practical and prototype-focused. It does not present me as a senior engineer, AI researcher, or owner of production-ready commercial products.
+這份 portfolio 以務實、技術導向的方式呈現個人經歷，不把自己包裝成資深工程師、AI 研究員，或已經完成商業化產品的人。專案描述會明確區分目前狀態，避免讓讀者誤以為所有專案都已正式上線。
 
-The project descriptions distinguish between:
-- In development / graduation project
-- Completed / course project
-- Personal practice / prototype
-- Internal system setup
+專案狀態分為：
+- 開發中 / 畢業專題
+- 已完成 / 課程專案
+- 個人技術練習 / 原型嘗試
+- 內部系統環境建置
 
-## Featured Project
+## 主打專案
 
 ### ECS NEO｜LINE 租屋協商存證與租約草稿生成系統
 
@@ -23,9 +23,9 @@ Status: In Development / Graduation Project
 Code: Private / Not Public  
 Demo: Screenshots, workflow diagrams, presentation materials
 
-ECS NEO is my graduation project. It explores how LINE Bot and AI workflows can support rental negotiation records and lease draft generation. The system is planned around a LINE group negotiation flow: a bot records messages and timestamps after joining the group, AI extracts rental conditions from conversation text, and backend validation checks the structured output before rendering a lease draft for both sides to review.
+ECS NEO 是我的畢業專題，主題聚焦於 LINE 租屋協商存證與租約草稿生成。此系統規劃以 LINE 群組作為租屋協商場域，由 Bot 保存加入後的訊息與時間戳，再透過 AI 從對話中抽取租屋條件，最後由後端進行結構檢查與模板渲染，產生可供雙方確認的租約草稿。
 
-Core workflow:
+核心流程：
 
 ```text
 591 找房
@@ -36,22 +36,24 @@ Core workflow:
 → 雙方確認後自行簽署
 ```
 
-Current scope:
-- In development and planning / implementation stage
-- Some proof-of-concept validation has been completed
-- Not a launched product, commercial service, legal service, notarization service, or formal e-signature platform
+目前狀態：
+- 開發中 / 畢業專題
+- 正在規劃與實作中
+- 已完成部分 POC 驗證
+- 尚未正式上線，亦非商業化產品
+- 不定位為法律服務、公證服務或正式電子簽章平台
 
-Technical focus:
+技術重點：
 - LINE Bot / LINE Messaging API
-- Webhook and API integration
+- Webhook 與 API Integration
 - AI Agent workflow
 - `condition_json` schema-based extraction
-- Missing-field checks for rent, deposit, lease term, utilities, repairs, tax reporting, and rental subsidy items
-- Schema validation and template rendering to reduce AI hallucination risk
+- 租金、押金、租期、水電、修繕、報稅、租補等缺漏欄位檢查
+- Schema Validation 與模板渲染，用來降低 AI 幻覺風險
 
-The goal is to generate a lease draft that both sides can review and confirm. AI is treated as a condition extractor, not as a final legal decision maker.
+此專題的目標是產出可供房東與房客確認的租約草稿。AI 在系統中被限制為「條件抽取器」，不是最終法律判斷者。
 
-## Other Projects
+## 其他專案
 
 ### n8n 法律資訊 AI Agent
 
@@ -59,35 +61,35 @@ Status: Completed / Course Project
 Code: Private / Not Public  
 Demo: Screenshots, n8n workflow screenshots, architecture diagram
 
-A five-person systems analysis course project. I worked on the core workflow and backend integration, using n8n Webhook, AI Agent flow, legal text preprocessing, RAG, and a local Qdrant vector database with about 3,500+ legal chunks. Course result: 100 points.
+系統分析課程五人專題。我負責核心系統流程與後端整合，使用 n8n Webhook 串接前端輸入與 AI Agent，結合法律條文資料預處理與 RAG 流程，並使用 Qdrant 本地向量資料庫處理約 3,500+ 法條 chunks。課程成果：100 分。
 
 ### TOEIC 題庫 AI 標籤與練習 App
 
 Status: Personal Practice / Prototype  
 Code: Private / Prototype Only
 
-A personal technical practice project using Flutter for a cross-platform practice interface and a Python ETL pipeline for cleaning and structuring open TOEIC-style question data. It also experiments with local Gemma / AI model tagging and Google TTS for listening practice. This is not presented as a formal product.
+個人技術練習作品，嘗試使用 Flutter 建立跨平台練習介面，並以 Python ETL pipeline 清洗與結構化開源 TOEIC 題庫。專案也嘗試使用本地 Gemma / AI 模型進行題目標籤，並整合 Google TTS 模擬聽力練習。此專案定位為 AI tag、ETL 與題庫資料處理練習，不呈現為正式產品。
 
 ### NBA 卡包購物商城
 
 Status: Completed / Course Project  
 Code: Private / Not Public
 
-A five-person course project using Java Servlet, Tomcat, and MySQL to implement basic e-commerce features such as login, cart, and order flow. It is presented as a frontend/backend/database integration practice project.
+課程五人專案，使用 Java Servlet、Tomcat、MySQL 建立基本電商網站功能，包含登入、購物車與訂單流程。此專案作為前後端與資料庫整合基礎練習。
 
 ### 遠端系統環境建置
 
 Status: Internal Setup / Prototype  
 Code: Not Applicable
 
-An internal remote access setup for sharing RTX 4050 development and compute resources with the graduation project team. I tested Docker + RustDesk, then moved toward Moonlight / Sunshine + Tailscale under practical constraints.
+為畢業專題組建置共用 RTX 4050 遠端開發與運算資源。過程中嘗試 Docker + RustDesk，後續改為 Moonlight / Sunshine + Tailscale 等方案，在限制條件下多次調整，完成可供團隊使用的遠端環境。
 
-## Skills Highlighted
+## 技術方向
 
 AI / Automation:
 - n8n Level 2
 - AI Agent workflow
-- RAG / LLM application concepts
+- RAG / LLM 應用概念
 - condition_json / schema-based extraction
 - Ollama / local LLM usage
 
@@ -97,40 +99,40 @@ Programming / Data:
 - JavaScript
 - SQL / MySQL
 - JSON / API / Webhook
-- ETL / data preprocessing
+- ETL / 資料預處理
 
 System / Tools:
 - Docker
 - GitHub
 - Qdrant
 - Tomcat
-- Linux / WSL basics
+- Linux / WSL 基礎
 - Tailscale / RustDesk / Moonlight / Sunshine
 
-## Files
+## 檔案說明
 
-- `index.html`: Main GitHub Pages portfolio page
-- `style.css`: Custom layout, cards, labels, and animation styles
-- `profile_pic.jpg`: Profile photo
-- `ECS_FLOW.jpg`: ECS NEO workflow whiteboard diagram
+- `index.html`: GitHub Pages portfolio 主頁
+- `style.css`: 自訂版面、專案卡片、狀態標籤與動畫樣式
+- `profile_pic.jpg`: 個人照片
+- `ECS_FLOW.jpg`: ECS NEO 系統流程白板圖
 
-## Local Preview
+## 本機預覽
 
-Open `index.html` directly in a browser, or serve the folder with any static file server.
+可以直接用瀏覽器開啟 `index.html`，也可以用任何靜態檔案伺服器預覽。
 
-Example:
+範例：
 
 ```bash
 python -m http.server 8091
 ```
 
-Then open:
+接著開啟：
 
 ```text
 http://127.0.0.1:8091/
 ```
 
-## Contact
+## 聯絡方式
 
 - Email: k9404019487@gmail.com
 - Location: 桃園市
