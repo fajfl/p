@@ -1,52 +1,137 @@
-﻿# Chen-yen Wu 個人履歷網站
+﻿# Chen-yen Wu Portfolio
 
-此專案為 GitHub Pages 個人履歷網站原始碼，定位為 AI 自動化與系統整合導向的資管系學生作品集。
+GitHub Pages portfolio for Chen-yen Wu, a Chung Yuan Christian University Information Management student focused on AI automation, LINE Bot workflows, API integration, data processing, system integration, and prototype development.
 
-網站連結:
+Live site:
 - https://fajfl.github.io/p/
 
-## 內容定位
+## Positioning
 
-履歷重點放在 AI workflow、LINE Bot、API 串接、Webhook、資料處理、AI Agent、系統整合與 prototype 開發。專案狀態會明確區分開發中、已完成、原型嘗試與技術練習，避免把尚未上線或仍在建置中的專案描述成正式產品。
+This portfolio presents me as an AI automation and system integration oriented MIS student. The content is intentionally practical and prototype-focused. It does not present me as a senior engineer, AI researcher, or owner of production-ready commercial products.
 
-## 主打專案
+The project descriptions distinguish between:
+- In development / graduation project
+- Completed / course project
+- Personal practice / prototype
+- Internal system setup
+
+## Featured Project
 
 ### ECS NEO｜LINE 租屋協商存證與租約草稿生成系統
 
-- Status: In Development / Graduation Project
-- Code: Private / Not Public
-- Demo: Screenshots, workflow diagrams, presentation materials
+Status: In Development / Graduation Project  
+Code: Private / Not Public  
+Demo: Screenshots, workflow diagrams, presentation materials
 
-本畢業專題聚焦於 LINE 租屋協商存證與租約草稿生成。系統規劃以 LINE 群組作為協商入口，由 Bot 保存協商紀錄，再透過 AI 條件抽取流程將非結構化對話整理為 condition_json，後端進行 schema validation 與模板渲染，產出可供雙方確認的租約草稿。
+ECS NEO is my graduation project. It explores how LINE Bot and AI workflows can support rental negotiation records and lease draft generation. The system is planned around a LINE group negotiation flow: a bot records messages and timestamps after joining the group, AI extracts rental conditions from conversation text, and backend validation checks the structured output before rendering a lease draft for both sides to review.
 
-目前為開發中 / 畢業專題，正在規劃與實作中，部分流程已進行 POC 驗證。此系統目標不是取代律師、公證人或正式電子簽章平台。
+Core workflow:
 
-## 其他重點專案
+```text
+591 找房
+→ LINE 群組協商
+→ Bot 保存協商紀錄
+→ AI 整理租屋條件
+→ 產生租約草稿
+→ 雙方確認後自行簽署
+```
 
-- [已完成 / 課程專案] n8n 法律資訊 AI Agent
-- [個人技術練習 / 原型嘗試] TOEIC 題庫 AI 標籤與練習 App
-- [已完成 / 課程專案] NBA 卡包購物商城
-- [原型嘗試] 遠端系統環境建置
+Current scope:
+- In development and planning / implementation stage
+- Some proof-of-concept validation has been completed
+- Not a launched product, commercial service, legal service, notarization service, or formal e-signature platform
 
-ECS NEO 與課程專案目前沒有公開 repo，因此 portfolio 僅呈現 case study、workflow 與 demo material 狀態，不放公開程式碼連結。
+Technical focus:
+- LINE Bot / LINE Messaging API
+- Webhook and API integration
+- AI Agent workflow
+- `condition_json` schema-based extraction
+- Missing-field checks for rent, deposit, lease term, utilities, repairs, tax reporting, and rental subsidy items
+- Schema validation and template rendering to reduce AI hallucination risk
 
-## 技術方向
+The goal is to generate a lease draft that both sides can review and confirm. AI is treated as a condition extractor, not as a final legal decision maker.
 
-- AI / Automation: n8n, AI Agent workflow, RAG / LLM 應用概念, condition_json / schema-based extraction, Ollama / local LLM usage
-- Programming / Data: Python, Java, JavaScript, SQL / MySQL, JSON / API / Webhook, ETL / 資料預處理
-- System / Tools: Docker, GitHub, Qdrant, Tomcat, Linux / WSL 基礎, Tailscale / RustDesk / Moonlight / Sunshine
+## Other Projects
 
-## 本機預覽
+### n8n 法律資訊 AI Agent
 
-直接以瀏覽器開啟 `index.html` 即可預覽。
+Status: Completed / Course Project  
+Code: Private / Not Public  
+Demo: Screenshots, n8n workflow screenshots, architecture diagram
 
-檔案說明:
-- `index.html`: 主頁內容
-- `style.css`: 自訂動畫與樣式
-- `profile_pic.jpg`: 頁首大頭照
-- `ECS_FLOW.jpg`: ECS NEO 系統流程白板圖
+A five-person systems analysis course project. I worked on the core workflow and backend integration, using n8n Webhook, AI Agent flow, legal text preprocessing, RAG, and a local Qdrant vector database with about 3,500+ legal chunks. Course result: 100 points.
 
-## 聯絡方式
+### TOEIC 題庫 AI 標籤與練習 App
+
+Status: Personal Practice / Prototype  
+Code: Private / Prototype Only
+
+A personal technical practice project using Flutter for a cross-platform practice interface and a Python ETL pipeline for cleaning and structuring open TOEIC-style question data. It also experiments with local Gemma / AI model tagging and Google TTS for listening practice. This is not presented as a formal product.
+
+### NBA 卡包購物商城
+
+Status: Completed / Course Project  
+Code: Private / Not Public
+
+A five-person course project using Java Servlet, Tomcat, and MySQL to implement basic e-commerce features such as login, cart, and order flow. It is presented as a frontend/backend/database integration practice project.
+
+### 遠端系統環境建置
+
+Status: Internal Setup / Prototype  
+Code: Not Applicable
+
+An internal remote access setup for sharing RTX 4050 development and compute resources with the graduation project team. I tested Docker + RustDesk, then moved toward Moonlight / Sunshine + Tailscale under practical constraints.
+
+## Skills Highlighted
+
+AI / Automation:
+- n8n Level 2
+- AI Agent workflow
+- RAG / LLM application concepts
+- condition_json / schema-based extraction
+- Ollama / local LLM usage
+
+Programming / Data:
+- Python
+- Java
+- JavaScript
+- SQL / MySQL
+- JSON / API / Webhook
+- ETL / data preprocessing
+
+System / Tools:
+- Docker
+- GitHub
+- Qdrant
+- Tomcat
+- Linux / WSL basics
+- Tailscale / RustDesk / Moonlight / Sunshine
+
+## Files
+
+- `index.html`: Main GitHub Pages portfolio page
+- `style.css`: Custom layout, cards, labels, and animation styles
+- `profile_pic.jpg`: Profile photo
+- `ECS_FLOW.jpg`: ECS NEO workflow whiteboard diagram
+
+## Local Preview
+
+Open `index.html` directly in a browser, or serve the folder with any static file server.
+
+Example:
+
+```bash
+python -m http.server 8091
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8091/
+```
+
+## Contact
 
 - Email: k9404019487@gmail.com
 - Location: 桃園市
+- GitHub: https://github.com/fajfl
